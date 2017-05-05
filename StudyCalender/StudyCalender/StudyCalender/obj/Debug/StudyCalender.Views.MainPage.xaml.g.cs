@@ -11,8 +11,8 @@
 namespace StudyCalender {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Documents\\GitHub\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\M" +
-        "ainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\Repos\\StudyCalender\\StudyCalender\\StudyCalender\\StudyCalend" +
+        "er\\Views\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -213,10 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Page Include="Views\GoogleProfilePage.xaml">
+    <EmbeddedResource Include="Views\GoogleProfilePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Agenda.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

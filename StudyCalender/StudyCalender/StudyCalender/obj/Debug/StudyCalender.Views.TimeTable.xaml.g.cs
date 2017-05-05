@@ -9,16 +9,15 @@
 //------------------------------------------------------------------------------
 
 namespace StudyCalender.Views {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\Repos\\StudyCalender\\StudyCalender\\StudyCalender\\StudyCalend" +
+        "er\\Views\\TimeTable.xaml")]
     public partial class TimeTable : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(TimeTable));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TimeTable));
         }
     }
 }

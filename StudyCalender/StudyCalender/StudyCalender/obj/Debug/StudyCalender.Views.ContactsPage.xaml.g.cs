@@ -11,8 +11,8 @@
 namespace StudyCalender {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Documents\\GitHub\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\C" +
-        "ontactsPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\Repos\\StudyCalender\\StudyCalender\\StudyCalender\\StudyCalend" +
+        "er\\Views\\ContactsPage.xaml")]
     public partial class ContactsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

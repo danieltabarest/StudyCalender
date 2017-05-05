@@ -11,8 +11,8 @@
 namespace StudyCalender {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Documents\\GitHub\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\R" +
-        "eminderPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\Repos\\StudyCalender\\StudyCalender\\StudyCalender\\StudyCalend" +
+        "er\\Views\\ReminderPage.xaml")]
     public partial class ReminderPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

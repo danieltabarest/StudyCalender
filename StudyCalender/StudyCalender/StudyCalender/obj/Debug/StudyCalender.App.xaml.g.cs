@@ -11,8 +11,8 @@
 namespace StudyCalender {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Documents\\GitHub\\StudyCalender\\StudyCalender\\StudyCalender\\App.xam" +
-        "l")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\Repos\\StudyCalender\\StudyCalender\\StudyCalender\\StudyCalend" +
+        "er\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
