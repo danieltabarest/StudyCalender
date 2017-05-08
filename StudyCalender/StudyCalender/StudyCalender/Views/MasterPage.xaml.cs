@@ -7,17 +7,33 @@ using System;
 
 namespace StudyCalender
 {
-	public partial class MasterPage : ContentPage
-	{
-		public ListView ListView { get { return listView; } }
-        public System.Windows.Input.ICommand SettingsCommand { get; }
+    public partial class MasterPage : ContentPage
+    {
+        public ListView ListView { get { return listView; } }
+        //public System.Windows.Input.ICommand SettingsCommand { get; }
 
-        public System.Windows.Input.ICommand PhotoCommand { get; }
-        public MasterPage ()
-		{
-			InitializeComponent ();
-            this.SettingsCommand = new Command(this.SettingsCommandExecute);
-            this.PhotoCommand = new Command(this.PhotoCommandExecute);
+        //public System.Windows.Input.ICommand PhotoCommand { get; }
+        public MasterPage()
+        {
+            InitializeComponent();
+            //this.SettingsCommand = new Command(this.SettingsCommandExecute);
+            //this.PhotoCommand = new Command(this.PhotoCommandExecute);
+
+            var tapSettingsGestureRecognizer = new TapGestureRecognizer();
+            tapSettingsGestureRecognizer.Tapped += (s, e) =>
+           {
+               try
+               {
+
+               }
+               catch (Exception ex)
+               {
+
+                   throw;
+               }
+           };
+            Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
+
 
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += async (s, e) =>
@@ -53,14 +69,14 @@ namespace StudyCalender
                 }
             };
             image.GestureRecognizers.Add(tapGestureRecognizer);
-          
 
-                var masterPageItems = new List<MasterPageItem> ();
-			//masterPageItems.Add (new MasterPageItem {
-			//	Title = "Contacts",
-			//	IconSource = "contacts.png",
-			//	TargetType = typeof(ContactsPage)
-			//});
+
+            var masterPageItems = new List<MasterPageItem>();
+            //masterPageItems.Add (new MasterPageItem {
+            //	Title = "Contacts",
+            //	IconSource = "contacts.png",
+            //	TargetType = typeof(ContactsPage)
+            //});
             //masterPageItems.Add (new MasterPageItem {
             //	Title = "TodoList",
             //	IconSource = "todo.png",
@@ -155,11 +171,12 @@ namespace StudyCalender
             {
                 Title = "Helps and feedback",
                 IconSource = "reminders.png",
-                TargetType = typeof(AboutPage)
+                TargetType = typeof(Feedback)
+
             });
 
             listView.ItemsSource = masterPageItems;
-		}
+        }
 
         private void SettingsCommandExecute(object obj)
         {

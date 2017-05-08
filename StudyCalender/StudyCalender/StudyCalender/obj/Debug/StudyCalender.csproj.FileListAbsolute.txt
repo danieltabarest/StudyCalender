@@ -60,7 +60,6 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plu
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.Abstractions.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.Abstractions.xml
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.dll.mdb
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.dll.mdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Views.Feedback.xaml.g.cs
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.dll.mdb
