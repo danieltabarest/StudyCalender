@@ -4,7 +4,7 @@
     "Xam.Plugin.Media": "2.6.2",
     "Xam.Plugins.Forms.CachedImageCircle": "0.0.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",
-    "Xamarin.Forms": "2.3.4.224"
+    "Xamarin.Forms": "2.3.2.127"
   },
   "frameworks": {
     "uap10.0": {}

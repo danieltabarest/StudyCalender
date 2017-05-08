@@ -10,10 +10,10 @@ public class FFBitmapDrawable
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onBoundsChange:(Landroid/graphics/Rect;)V:GetOnBoundsChange_Landroid_graphics_Rect_Handler\n" +
 			"n_draw:(Landroid/graphics/Canvas;)V:GetDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_setAlpha:(I)V:GetSetAlpha_IHandler\n" +
 			"n_setColorFilter:(ILandroid/graphics/PorterDuff$Mode;)V:GetSetColorFilter_ILandroid_graphics_PorterDuff_Mode_Handler\n" +
-			"n_onBoundsChange:(Landroid/graphics/Rect;)V:GetOnBoundsChange_Landroid_graphics_Rect_Handler\n" +
 			"";
 		mono.android.Runtime.register ("FFImageLoading.Drawables.FFBitmapDrawable, FFImageLoading.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", FFBitmapDrawable.class, __md_methods);
 	}
@@ -83,6 +83,14 @@ public class FFBitmapDrawable
 	}
 
 
+	public void onBoundsChange (android.graphics.Rect p0)
+	{
+		n_onBoundsChange (p0);
+	}
+
+	private native void n_onBoundsChange (android.graphics.Rect p0);
+
+
 	public void draw (android.graphics.Canvas p0)
 	{
 		n_draw (p0);
@@ -105,14 +113,6 @@ public class FFBitmapDrawable
 	}
 
 	private native void n_setColorFilter (int p0, android.graphics.PorterDuff.Mode p1);
-
-
-	public void onBoundsChange (android.graphics.Rect p0)
-	{
-		n_onBoundsChange (p0);
-	}
-
-	private native void n_onBoundsChange (android.graphics.Rect p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

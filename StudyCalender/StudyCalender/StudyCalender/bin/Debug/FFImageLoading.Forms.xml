@@ -121,6 +121,8 @@
             DownsampleWidth and DownsampleHeight properties will be automatically set to view size
             If the view height or width will not return > 0 - it'll fall back 
             to using DownsampleWidth / DownsampleHeight properties values
+            IMPORTANT: That property is tricky when using some auto-layouts as view doesn't have its size defined,
+            so it's always safe to have DownsampleWidth / DownsampleHeight set as a fallback
             </summary>
             <value><c>true</c> if downsample to view size; otherwise, <c>false</c>.</value>
         </member>
@@ -165,6 +167,17 @@
             <summary>
             Indicates if the transparency channel should be loaded. By default this value comes from ImageService.Instance.Config.LoadWithTransparencyChannel.
             </summary>
+        </member>
+        <member name="F:FFImageLoading.Forms.CachedImage.BitmapOptimizationsProperty">
+            <summary>
+            The bitmap optimizations property.
+            </summary>
+        </member>
+        <member name="P:FFImageLoading.Forms.CachedImage.BitmapOptimizations">
+            <summary>
+            Enables or disables the bitmap optimizations.
+            </summary>
+            <value>The bitmap optimizations.</value>
         </member>
         <member name="F:FFImageLoading.Forms.CachedImage.FadeAnimationEnabledProperty">
             <summary>
@@ -223,6 +236,12 @@
             Gets or sets the cache custom key factory.
             </summary>
             <value>The cache key factory.</value>
+        </member>
+        <member name="P:FFImageLoading.Forms.CachedImage.CustomDataResolver">
+            <summary>
+            Gets or sets the custom data resolver for eg. SVG support (another nuget)
+            </summary>
+            <value>The custom data resolver.</value>
         </member>
         <member name="M:FFImageLoading.Forms.CachedImage.ReloadImage">
             <summary>
@@ -317,6 +336,60 @@
             Command parameter: CachedImageEvents.FinishEventArgs
             </summary>
             <value>The finish command.</value>
+        </member>
+        <member name="E:FFImageLoading.Forms.CachedImage.DownloadStarted">
+            <summary>
+            Occurs when an image starts downloading from web.
+            </summary>
+        </member>
+        <member name="F:FFImageLoading.Forms.CachedImage.DownloadStartedCommandProperty">
+            <summary>
+            The DownloadStartedCommandProperty.
+            </summary>
+        </member>
+        <member name="P:FFImageLoading.Forms.CachedImage.DownloadStartedCommand">
+            <summary>
+            Gets or sets the DownloadStartedCommand.
+             Occurs when an image starts downloading from web.
+            Command parameter: DownloadStartedEventArgs
+            </summary>
+            <value>The download started command.</value>
+        </member>
+        <member name="E:FFImageLoading.Forms.CachedImage.DownloadProgress">
+            <summary>
+            This callback can be used for reading download progress
+            </summary>
+        </member>
+        <member name="F:FFImageLoading.Forms.CachedImage.DownloadProgressCommandProperty">
+            <summary>
+            The DownloadProgressCommandProperty.
+            </summary>
+        </member>
+        <member name="P:FFImageLoading.Forms.CachedImage.DownloadProgressCommand">
+            <summary>
+            Gets or sets the DownloadProgressCommand.
+             This callback can be used for reading download progress
+            Command parameter: DownloadProgressEventArgs
+            </summary>
+            <value>The download started command.</value>
+        </member>
+        <member name="E:FFImageLoading.Forms.CachedImage.FileWriteFinished">
+            <summary>
+            Called after file is succesfully written to the disk.
+            </summary>
+        </member>
+        <member name="F:FFImageLoading.Forms.CachedImage.FileWriteFinishedCommandProperty">
+            <summary>
+            The FileWriteFinishedCommandProperty.
+            </summary>
+        </member>
+        <member name="P:FFImageLoading.Forms.CachedImage.FileWriteFinishedCommand">
+            <summary>
+            Gets or sets the FileWriteFinishedCommand.
+             Called after file is succesfully written to the disk.
+            Command parameter: FileWriteFinishedEventArgs
+            </summary>
+            <value>The download started command.</value>
         </member>
         <member name="F:FFImageLoading.Forms.CachedImage.CacheTypeProperty">
             <summary>

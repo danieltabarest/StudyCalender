@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Plugin.Permissions; 
+using Plugin.Permissions.Abstractions;
 
 namespace StudyCalender.Droid
 {
@@ -19,4 +21,9 @@ namespace StudyCalender.Droid
             LoadApplication(new App());
         }
     }
+
+    //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+    //{
+    //    PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+    //}
 }
