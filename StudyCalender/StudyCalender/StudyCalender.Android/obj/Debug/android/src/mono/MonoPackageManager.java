@@ -127,7 +127,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v7.MediaRouter.dll",
 		"StudyCalender.dll",
+		"Plugin.Media.Abstractions.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Media.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

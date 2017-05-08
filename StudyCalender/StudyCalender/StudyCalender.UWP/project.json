@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Xam.Plugin.Media": "2.6.2",
     "Xam.Plugins.Forms.CachedImageCircle": "0.0.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",
     "Xamarin.Forms": "2.3.4.224"
