@@ -78,9 +78,6 @@
       <DependentUpon>ContactsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GoogleProfileCsPage.cs" />
-    <EmbeddedResource Include="Views\GoogleProfilePage.xaml.cs">
-      <DependentUpon>GoogleProfilePage.xaml</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="Views\ItemDetailPage.xaml.cs">
       <DependentUpon>ItemDetailPage.xaml</DependentUpon>
     </Compile>
@@ -210,10 +207,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TimeTable.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\GoogleProfilePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
