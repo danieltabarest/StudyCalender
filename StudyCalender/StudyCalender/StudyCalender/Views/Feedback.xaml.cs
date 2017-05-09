@@ -8,9 +8,9 @@ namespace StudyCalender.Views
     {
         public Feedback()
         {
-            InitializeComponent();
             try
             {
+                InitializeComponent();
                 Device.OpenUri(new Uri("mailto:ryan.hatfield@test.com"));
             }
             catch (Exception ex)

@@ -7,9 +7,9 @@
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 			 Title="Personal Organiser">
     <ContentPage.Content>
-       
+
         <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" Spacing="0">
-            <StackLayout Orientation="Vertical" VerticalOptions="Fill" BackgroundColor="#37474F" Spacing="10" Padding="15,40,15,15">
+            <StackLayout Orientation="Vertical" VerticalOptions="Fill" BackgroundColor="#37474F" Spacing="10" Padding="0,40,15,15">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="0">
                         <controls:CircleImage x:Name="image"  FillColor="Red" Source="contacts.png" BorderThickness="4" BorderColor="Red" WidthRequest="90" HeightRequest="60" Aspect="AspectFit"
@@ -32,13 +32,15 @@
                 </StackLayout>
 
             </StackLayout>
-            <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" BackgroundColor="#FFFFFF">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}"  TextColor="#9E9E9E" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" BackgroundColor="#FFFFFF" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}"  Height="10" TextColor="#9E9E9E" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

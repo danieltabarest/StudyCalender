@@ -14,7 +14,6 @@ namespace StudyCalender.Views
         public ItemsPage()
         {
             InitializeComponent();
-
             BindingContext = viewModel = new ItemsViewModel();
         }
 

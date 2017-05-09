@@ -1,29 +1,56 @@
-﻿using System;
+﻿using StudyCalender.Views;
+using System;
 using Xamarin.Forms;
 
 namespace StudyCalender
 {
-	public partial class MainPage : MasterDetailPage
-	{
-		public MainPage ()
-		{
-			InitializeComponent ();
+    public partial class MainPage : MasterDetailPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
 
-			masterPage.ListView.ItemSelected += OnItemSelected;
+            masterPage.ListView.ItemSelected += OnItemSelected;
 
-			if (Device.OS == TargetPlatform.Windows) {
-				Master.Icon = "swap.png";
-			}
-		}
+            masterPage.TapSettingsGestureRecognizer.Tapped += (s, e) =>
+            {
+                try
+                {
+                    Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Settings)));
+                    masterPage.ListView.SelectedItem = null;
+                    IsPresented = false;
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            };
 
-		void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
-		{
-			var item = e.SelectedItem as MasterPageItem;
-			if (item != null) {
-				Detail = new NavigationPage ((Page)Activator.CreateInstance (item.TargetType));
-				masterPage.ListView.SelectedItem = null;
-				IsPresented = false;
-			}
-		}
-	}
+            if (Device.OS == TargetPlatform.Windows)
+            {
+                Master.Icon = "swap.png";
+            }
+        }
+
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+
+          
+            if (item != null)
+            {
+                if (item.Title == "Helps and feedback")
+                {
+                    App.Current.MainPage = new NavigationPage(new Feedback());
+                    masterPage.ListView.SelectedItem = null;
+                    IsPresented = false;
+                    return;
+                }
+
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.ListView.SelectedItem = null;
+                IsPresented = false;
+            }
+        }
+    }
 }

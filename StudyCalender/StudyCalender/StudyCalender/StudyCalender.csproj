@@ -53,6 +53,9 @@
     <Compile Include="ViewModels\GoogleViewModel.cs" />
     <Compile Include="ViewModels\ItemDetailViewModel.cs" />
     <Compile Include="ViewModels\ItemsViewModel.cs" />
+    <Compile Include="Views\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Feedback.xaml.cs">
       <DependentUpon>Feedback.xaml</DependentUpon>
     </Compile>
@@ -244,6 +247,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Feedback.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Settings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

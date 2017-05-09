@@ -9,15 +9,16 @@
 //------------------------------------------------------------------------------
 
 namespace StudyCalender.Views {
+    using System;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\SC\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\Agenda.x" +
-        "aml")]
     public partial class Agenda : global::Xamarin.Forms.ContentPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Agenda));
+            this.LoadFromXaml(typeof(Agenda));
         }
     }
 }

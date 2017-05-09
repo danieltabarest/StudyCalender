@@ -9,35 +9,36 @@
 //------------------------------------------------------------------------------
 
 namespace StudyCalender {
+    using System;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\SC\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\MasterPa" +
-        "ge.xaml")]
     public partial class MasterPage : global::Xamarin.Forms.ContentPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::ImageCircle.Forms.Plugin.Abstractions.CircleImage image;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label MasterPage_txtTermName;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label MasterPage_txtSemester;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::ImageCircle.Forms.Plugin.Abstractions.CircleImage Settings;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ListView listView;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MasterPage));
-            image = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ImageCircle.Forms.Plugin.Abstractions.CircleImage>(this, "image");
-            MasterPage_txtTermName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "MasterPage_txtTermName");
-            MasterPage_txtSemester = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "MasterPage_txtSemester");
-            Settings = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ImageCircle.Forms.Plugin.Abstractions.CircleImage>(this, "Settings");
-            listView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "listView");
+            this.LoadFromXaml(typeof(MasterPage));
+            image = this.FindByName<global::ImageCircle.Forms.Plugin.Abstractions.CircleImage>("image");
+            MasterPage_txtTermName = this.FindByName<global::Xamarin.Forms.Label>("MasterPage_txtTermName");
+            MasterPage_txtSemester = this.FindByName<global::Xamarin.Forms.Label>("MasterPage_txtSemester");
+            Settings = this.FindByName<global::ImageCircle.Forms.Plugin.Abstractions.CircleImage>("Settings");
+            listView = this.FindByName<global::Xamarin.Forms.ListView>("listView");
         }
     }
 }

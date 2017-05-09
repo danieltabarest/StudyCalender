@@ -1,5 +1,3 @@
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.dll
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.companyname.StudyCalender.apk
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.companyname.StudyCalender-Signed.apk
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\CachedImageCircle.Forms.Plugin.Abstractions.dll
@@ -60,8 +58,6 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Media.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Media.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.dll
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\bin\com.companyname.StudyCalender.apk
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\layout\tabbar.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\layout\toolbar.xml
@@ -112,6 +108,16 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Permissions.Abstractions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Permissions.Abstractions.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\xml\file_paths.xml
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\iconcalender.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\flower.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\clock.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\send.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\list.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\time.png
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.pdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Java.Interop.dll.mdb

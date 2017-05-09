@@ -10,28 +10,21 @@ namespace StudyCalender
     public partial class MasterPage : ContentPage
     {
         public ListView ListView { get { return listView; } }
-        //public System.Windows.Input.ICommand SettingsCommand { get; }
 
-        //public System.Windows.Input.ICommand PhotoCommand { get; }
+        TapGestureRecognizer tapSettingsGestureRecognizer;
+        List<MasterPageItem> masterPageItems;
+
+        public TapGestureRecognizer TapSettingsGestureRecognizer
+        {
+            get { return tapSettingsGestureRecognizer; }
+        }
         public MasterPage()
         {
             InitializeComponent();
-            //this.SettingsCommand = new Command(this.SettingsCommandExecute);
-            //this.PhotoCommand = new Command(this.PhotoCommandExecute);
 
-            var tapSettingsGestureRecognizer = new TapGestureRecognizer();
-            tapSettingsGestureRecognizer.Tapped += (s, e) =>
-           {
-               try
-               {
 
-               }
-               catch (Exception ex)
-               {
+            tapSettingsGestureRecognizer = new TapGestureRecognizer();
 
-                   throw;
-               }
-           };
             Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
 
 
@@ -71,94 +64,31 @@ namespace StudyCalender
             image.GestureRecognizers.Add(tapGestureRecognizer);
 
 
-            var masterPageItems = new List<MasterPageItem>();
-            //masterPageItems.Add (new MasterPageItem {
-            //	Title = "Contacts",
-            //	IconSource = "contacts.png",
-            //	TargetType = typeof(ContactsPage)
-            //});
-            //masterPageItems.Add (new MasterPageItem {
-            //	Title = "TodoList",
-            //	IconSource = "todo.png",
-            //	TargetType = typeof(TodoListPage)
-            //});
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Google Profile Page",
-            //             IconSource = "todo.png",
-            //             TargetType = typeof(GoogleProfileCsPage)
-            //         });
-            //         masterPageItems.Add (new MasterPageItem {
-            //	Title = "Reminders",
-            //	IconSource = "reminders.png",
-            //	TargetType = typeof(ReminderPage)
-            //});
+            masterPageItems = new List<MasterPageItem>();
+
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Overview",
-                IconSource = "reminders.png",
+                IconSource = "flower.png",
                 TargetType = typeof(Overview)
             });
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Agenda",
-                IconSource = "reminders.png",
+                IconSource = "clock.png",
                 TargetType = typeof(Agenda)
             });
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Calender",
-                IconSource = "reminders.png",
+                IconSource = "time.png",
                 TargetType = typeof(Calender)
             });
 
 
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "TimeTable",
-            //             IconSource = "ic_perm_contact_calendar_white_24dp.png",
-            //             TargetType = typeof(TimeTable)
-            //         });
-
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Grades",
-            //             IconSource = "reminders.png",
-            //             TargetType = typeof(Grades)
-            //         });
-
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Subjects",
-            //             IconSource = "reminders.png",
-            //             TargetType = typeof(ReminderPage)
-            //         });
-
-
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Attendance",
-            //             IconSource = "reminders.png",
-            //             TargetType = typeof(ReminderPage)
-            //         });
-
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Teachers",
-            //             IconSource = "reminders.png",
-            //             TargetType = typeof(Teachers)
-            //         });
-
-
-            //         masterPageItems.Add(new MasterPageItem
-            //         {
-            //             Title = "Recordings",
-            //             IconSource = "reminders.png",
-            //             TargetType = typeof(ReminderPage)
-            //         });
 
             masterPageItems.Add(new MasterPageItem
             {
@@ -170,7 +100,7 @@ namespace StudyCalender
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Helps and feedback",
-                IconSource = "reminders.png",
+                IconSource = "send.png",
                 TargetType = typeof(Feedback)
 
             });
@@ -178,10 +108,7 @@ namespace StudyCalender
             listView.ItemsSource = masterPageItems;
         }
 
-        private void SettingsCommandExecute(object obj)
-        {
-            //throw new NotImplementedException();
-        }
+
 
         private async void PhotoCommandExecute(object obj)
         {
