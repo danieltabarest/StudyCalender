@@ -57,6 +57,7 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Xml.XDocument.dll
