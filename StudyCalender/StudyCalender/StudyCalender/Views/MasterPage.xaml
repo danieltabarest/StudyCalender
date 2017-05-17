@@ -2,13 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="StudyCalender.MasterPage"
-			 Padding="0,40,0,0"
+			 
 			 Icon="hamburger.png"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-			 Title="Personal Organiser">
+			 Title="Calender">
     <ContentPage.Content>
-
-        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" Spacing="0">
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" >
             <StackLayout Orientation="Vertical" VerticalOptions="Fill" BackgroundColor="#37474F" Spacing="10" Padding="0,40,15,15">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="0">

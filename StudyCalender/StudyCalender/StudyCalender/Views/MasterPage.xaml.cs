@@ -70,21 +70,21 @@ namespace StudyCalender
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Overview",
-                IconSource = "flower.png",
+                IconSource = "ic_home_black_24dp.png",
                 TargetType = typeof(Overview)
             });
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Agenda",
-                IconSource = "clock.png",
+                IconSource = "ic_assignment_black_24dp.png",
                 TargetType = typeof(Agenda)
             });
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Calender",
-                IconSource = "time.png",
+                IconSource = "ic_format_list_numbered_black_24dp.png",
                 TargetType = typeof(Calender)
             });
 
@@ -93,14 +93,14 @@ namespace StudyCalender
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Remove ads",
-                IconSource = "reminders.png",
+                IconSource = "ic_card_membership_black_24dp.png",
                 TargetType = typeof(ReminderPage)
             });
 
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Helps and feedback",
-                IconSource = "send.png",
+                IconSource = "ic_help_black_24dp.png",
                 TargetType = typeof(Feedback)
 
             });
