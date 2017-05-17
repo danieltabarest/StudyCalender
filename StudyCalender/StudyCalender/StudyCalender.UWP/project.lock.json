@@ -2092,6 +2092,16 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.FFImageLoading/2.1.6": {
         "dependencies": {
           "Microsoft.Net.Http": "2.2.29"
@@ -4302,6 +4312,16 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.FFImageLoading/2.1.6": {
@@ -6555,6 +6575,16 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.FFImageLoading/2.1.6": {
         "dependencies": {
           "Microsoft.Net.Http": "2.2.29"
@@ -8774,6 +8804,16 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.FFImageLoading/2.1.6": {
@@ -11036,6 +11076,16 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.FFImageLoading/2.1.6": {
         "dependencies": {
           "Microsoft.Net.Http": "2.2.29"
@@ -13255,6 +13305,16 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.FFImageLoading/2.1.6": {
@@ -15515,6 +15575,16 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/4.0.0-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.FFImageLoading/2.1.6": {
@@ -21863,6 +21933,42 @@
         "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.xml"
       ]
     },
+    "Xam.Plugins.Messaging/4.0.0-beta": {
+      "sha512": "A7H6rSUh2QZ4aLnJJRgYFlDEFgC6p2M6Qlr1I0MULru67uFbG72Slc8n6xPQM+CsgPXcQZdXERCFDeaLB0PzOA==",
+      "type": "package",
+      "files": [
+        "Xam.Plugins.Messaging.4.0.0-beta.nupkg.sha512",
+        "Xam.Plugins.Messaging.nuspec",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Messaging.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.xml",
+        "lib/UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/UAP10/Plugin.Messaging.dll",
+        "lib/UAP10/Plugin.Messaging.pdb",
+        "lib/UAP10/Plugin.Messaging.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.xml",
+        "lib/win8/Plugin.Messaging.Abstractions.dll",
+        "lib/win8/Plugin.Messaging.Abstractions.pdb",
+        "lib/win8/Plugin.Messaging.Abstractions.xml",
+        "lib/win8/Plugin.Messaging.dll",
+        "lib/win8/Plugin.Messaging.pdb",
+        "lib/win8/Plugin.Messaging.xml"
+      ]
+    },
     "Xamarin.FFImageLoading/2.1.6": {
       "sha512": "FTPdYzvGCfg54suueH4mZ3xeuI5qbgvQ6Nx8jO5FFP3Xk3W+L0Rz6mbenBcIPDiQgQuSqwO/ixz/riCnUkpHhQ==",
       "type": "package",
@@ -22132,6 +22238,7 @@
       "Xam.Plugin.Media >= 2.6.2",
       "Xam.Plugins.Forms.CachedImageCircle >= 0.0.0.1",
       "Xam.Plugins.Forms.ImageCircle >= 1.8.1",
+      "Xam.Plugins.Messaging >= 4.0.0-beta",
       "Xamarin.Forms >= 2.3.2.127"
     ],
     "UAP,Version=v10.0": []

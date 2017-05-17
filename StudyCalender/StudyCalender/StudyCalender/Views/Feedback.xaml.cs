@@ -1,6 +1,8 @@
-﻿
-using System;
+﻿using System.Windows.Input;
+using StudyCalender.Helpers;
 using Xamarin.Forms;
+using Plugin.Messaging;
+using System;
 
 namespace StudyCalender.Views
 {
@@ -11,7 +13,9 @@ namespace StudyCalender.Views
             try
             {
                 InitializeComponent();
-                Device.OpenUri(new Uri("mailto:ryan.hatfield@test.com"));
+                SendEmail();
+                //SendEmailCommand = new Command(SendEmail);
+                //SendHtmlEmailCommand = new Command(SendHtmlEmail);
             }
             catch (Exception ex)
             {
@@ -19,6 +23,19 @@ namespace StudyCalender.Views
                 throw;
             }
             
+        }
+
+        public ICommand SendEmailCommand { get; set; }
+        public ICommand SendHtmlEmailCommand { get; set; }
+
+        private void SendEmail()
+        {
+            CrossMessaging.Current.EmailMessenger.SendSampleEmail(false);
+        }
+
+        private void SendHtmlEmail()
+        {
+            CrossMessaging.Current.EmailMessenger.SendSampleEmail(true);
         }
     }
 }

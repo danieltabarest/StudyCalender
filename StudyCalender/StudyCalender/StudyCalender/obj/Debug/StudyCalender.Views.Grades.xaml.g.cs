@@ -9,20 +9,19 @@
 //------------------------------------------------------------------------------
 
 namespace StudyCalender {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Admin\\Source\\SC\\StudyCalender\\StudyCalender\\StudyCalender\\Views\\Grades.x" +
+        "aml")]
     public partial class Grades : global::Xamarin.Forms.MasterDetailPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::StudyCalender.MasterPage masterPage;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Grades));
-            masterPage = this.FindByName<global::StudyCalender.MasterPage>("masterPage");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Grades));
+            masterPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::StudyCalender.MasterPage>(this, "masterPage");
         }
     }
 }

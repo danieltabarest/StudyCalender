@@ -4,6 +4,7 @@
     "Xam.Plugin.Media": "2.6.2",
     "Xam.Plugins.Forms.CachedImageCircle": "0.0.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",
+    "Xam.Plugins.Messaging": "4.0.0-beta",
     "Xamarin.Forms": "2.3.2.127"
   },
   "frameworks": {

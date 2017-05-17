@@ -11,6 +11,8 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.CurrentActivity.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Media.Abstractions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Media.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Messaging.Abstractions.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Messaging.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Permissions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
