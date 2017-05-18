@@ -5,18 +5,19 @@
              xmlns:Behaviors="clr-namespace:StudyCalender.Behaviors"
 					   x:Class="StudyCalender.Pages.CalendarsPage"
              Title="{Binding Title}">
-  <ContentPage.ToolbarItems>
-    <Controls:ToolbarItemEx Name="Refresh" ToolbarItemType="Refresh" Command="{Binding FetchCalendarsCommand}">
-      <!--<ToolbarItem.Icon>
+    <ContentPage.ToolbarItems>
+        <Controls:ToolbarItemEx Name="Refresh" ToolbarItemType="Refresh" Command="{Binding FetchCalendarsCommand}">
+            <!--<ToolbarItem.Icon>
         <OnPlatform x:TypeArguments="FileImageSource" WinPhone="Toolkit.Content/ApplicationBar.Select.png"/>
       </ToolbarItem.Icon>-->
-    </Controls:ToolbarItemEx>
-    <Controls:ToolbarItemEx Name="Add" ToolbarItemType="Add" Command="{Binding AddCalendarCommand}"/>
-    <Controls:ToolbarItemEx Name="Search" ToolbarItemType="Search" Command="{Binding GoToIDCommand}"/>
-  </ContentPage.ToolbarItems>
+        </Controls:ToolbarItemEx>
+        <Controls:ToolbarItemEx Name="Add" ToolbarItemType="Add" Command="{Binding AddCalendarCommand}"/>
+        <Controls:ToolbarItemEx Name="Search" ToolbarItemType="Search" Command="{Binding GoToIDCommand}"/>
+    </ContentPage.ToolbarItems>
 
-  <Grid>
-    <ListView x:Name="Calendars"
+    <Grid>
+        <StackLayout Grid.Row="0" x:Name="StackCalendars"></StackLayout>
+        <ListView Grid.Row="1" x:Name="Calendars"
               ItemsSource="{Binding GroupedCalendars}"
               IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Key}"
@@ -24,21 +25,21 @@
               RefreshCommand="{Binding FetchCalendarsCommand}"
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
               Behaviors:ListViewTap.Command="{Binding SelectCalendarCommand}">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <TextCell Text="{Binding Name}">
-            <TextCell.ContextActions>
-              <MenuItem Text="Edit"
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Edit"
                         Command="{Binding Source={x:Reference Calendars}, Path=BindingContext.EditCalendarCommand}"
                         CommandParameter="{Binding .}"/>
-              <MenuItem Text="Delete"
+                            <MenuItem Text="Delete"
                         IsDestructive="True"
                         Command="{Binding Source={x:Reference Calendars}, Path=BindingContext.DeleteCalendarCommand}"
                         CommandParameter="{Binding .}"/>
-            </TextCell.ContextActions>
-          </TextCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-  </Grid>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
 </ContentPage>

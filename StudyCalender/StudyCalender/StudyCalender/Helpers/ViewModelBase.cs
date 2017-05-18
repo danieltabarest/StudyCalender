@@ -1,5 +1,6 @@
 ﻿using System;
 using StudyCalender.Core.Services;
+using System.ComponentModel;
 
 namespace StudyCalender.Core.Helpers
 {
@@ -12,6 +13,12 @@ namespace StudyCalender.Core.Helpers
 
         #endregion
 
+
+        //public event PropertyChangedEventHandler PropertyChanged;
+        //public void NotifyPropertyChanged(string propertyName)
+        //{
+        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        //}
         public virtual void Initialize() { }
 
 

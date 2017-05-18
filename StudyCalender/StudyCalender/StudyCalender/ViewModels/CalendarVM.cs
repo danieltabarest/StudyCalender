@@ -16,6 +16,8 @@ namespace StudyCalender
 
 	public class CalendarVM : BaseViewModel
 	{
+
+
 		private DateTime? _date;
 		public DateTime? Date
 		{

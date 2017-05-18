@@ -8,6 +8,9 @@ namespace StudyCalender.Views
         public Calender()
         {
             InitializeComponent();
+
         }
+
+    
     }
 }

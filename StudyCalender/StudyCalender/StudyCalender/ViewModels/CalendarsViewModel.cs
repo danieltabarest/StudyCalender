@@ -6,6 +6,7 @@ using System.Windows.Input;
 using System.Diagnostics;
 using StudyCalender.Core.Helpers;
 using Plugin.Calendars.Abstractions;
+using System.Collections.Generic;
 using Plugin.Calendars;
 using StudyCalender.Core.Enums;
 using StudyCalender.Core.Extensions;
@@ -24,6 +25,35 @@ namespace StudyCalender.Core.ViewModels
         #endregion
 
         #region Properties
+
+        private DateTime? _date;
+        public DateTime? Date
+        {
+            get
+            {
+                return _date;
+            }
+            set
+            {
+                if (_date != value)
+                {
+                    _date = value;
+                    HasChanged();
+                }
+                /*_date = value;
+                NotifyPropertyChanged(nameof(Date));*/
+            }
+        }
+
+        public ICommand DateChosen
+        {
+            get
+            {
+                return new Command((obj) => {
+                    System.Diagnostics.Debug.WriteLine(obj as DateTime?);
+                });
+            }
+        }
 
         public string Title { get { return "Select Calendar"; } }
 
@@ -74,6 +104,7 @@ namespace StudyCalender.Core.ViewModels
         {
             try
             {
+
                 FetchCalendars();
             }
             catch (Exception ex)
@@ -109,6 +140,26 @@ namespace StudyCalender.Core.ViewModels
 
             IsBusy = false;
         }
+
+        public async void CalendarClick(List<DateTime> calendar)
+        {
+            try
+            {
+                await Navigator.PushAsync<EventsViewModel>(vm =>
+                {
+
+                    vm.Calendar = new Calendar {AccountName= "daniel", Color="",ExternalID="15",Name= "daniel" };
+                    vm.Start = calendar.First().Date;
+                    vm.End = calendar.First().Date;
+                });
+            }
+            catch (Exception ex)
+            {
+                ReportError(ex);
+            }
+        }
+
+
 
         private async void AddCalendar()
         {
@@ -222,5 +273,8 @@ namespace StudyCalender.Core.ViewModels
                 return "Read-only";
             }
         }
+
+
+      
     }
 }
