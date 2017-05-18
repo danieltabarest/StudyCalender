@@ -236,41 +236,41 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f010083
 			public const int activityChooserViewStyle = 2130772099;
 			
-			// aapt resource value: 0x7f01013f
-			public const int ahBarColor = 2130772287;
+			// aapt resource value: 0x7f01014c
+			public const int ahBarColor = 2130772300;
 			
-			// aapt resource value: 0x7f010147
-			public const int ahBarLength = 2130772295;
+			// aapt resource value: 0x7f010154
+			public const int ahBarLength = 2130772308;
 			
-			// aapt resource value: 0x7f010146
-			public const int ahBarWidth = 2130772294;
+			// aapt resource value: 0x7f010153
+			public const int ahBarWidth = 2130772307;
 			
-			// aapt resource value: 0x7f010144
-			public const int ahCircleColor = 2130772292;
+			// aapt resource value: 0x7f010151
+			public const int ahCircleColor = 2130772305;
 			
-			// aapt resource value: 0x7f010143
-			public const int ahDelayMillis = 2130772291;
+			// aapt resource value: 0x7f010150
+			public const int ahDelayMillis = 2130772304;
 			
-			// aapt resource value: 0x7f010145
-			public const int ahRadius = 2130772293;
+			// aapt resource value: 0x7f010152
+			public const int ahRadius = 2130772306;
 			
-			// aapt resource value: 0x7f010140
-			public const int ahRimColor = 2130772288;
+			// aapt resource value: 0x7f01014d
+			public const int ahRimColor = 2130772301;
 			
-			// aapt resource value: 0x7f010141
-			public const int ahRimWidth = 2130772289;
+			// aapt resource value: 0x7f01014e
+			public const int ahRimWidth = 2130772302;
 			
-			// aapt resource value: 0x7f010142
-			public const int ahSpinSpeed = 2130772290;
+			// aapt resource value: 0x7f01014f
+			public const int ahSpinSpeed = 2130772303;
 			
-			// aapt resource value: 0x7f01013c
-			public const int ahText = 2130772284;
+			// aapt resource value: 0x7f010149
+			public const int ahText = 2130772297;
 			
-			// aapt resource value: 0x7f01013d
-			public const int ahTextColor = 2130772285;
+			// aapt resource value: 0x7f01014a
+			public const int ahTextColor = 2130772298;
 			
-			// aapt resource value: 0x7f01013e
-			public const int ahTextSize = 2130772286;
+			// aapt resource value: 0x7f01014b
+			public const int ahTextSize = 2130772299;
 			
 			// aapt resource value: 0x7f0100a6
 			public const int alertDialogButtonGroupStyle = 2130772134;
@@ -1079,6 +1079,45 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0100dc
 			public const int track = 2130772188;
 			
+			// aapt resource value: 0x7f01013d
+			public const int tsquare_dayBackground = 2130772285;
+			
+			// aapt resource value: 0x7f01013e
+			public const int tsquare_dayTextColor = 2130772286;
+			
+			// aapt resource value: 0x7f010140
+			public const int tsquare_displayHeader = 2130772288;
+			
+			// aapt resource value: 0x7f01013c
+			public const int tsquare_dividerColor = 2130772284;
+			
+			// aapt resource value: 0x7f010141
+			public const int tsquare_headerTextColor = 2130772289;
+			
+			// aapt resource value: 0x7f010143
+			public const int tsquare_state_current_month = 2130772291;
+			
+			// aapt resource value: 0x7f010148
+			public const int tsquare_state_highlighted = 2130772296;
+			
+			// aapt resource value: 0x7f010145
+			public const int tsquare_state_range_first = 2130772293;
+			
+			// aapt resource value: 0x7f010147
+			public const int tsquare_state_range_last = 2130772295;
+			
+			// aapt resource value: 0x7f010146
+			public const int tsquare_state_range_middle = 2130772294;
+			
+			// aapt resource value: 0x7f010142
+			public const int tsquare_state_selectable = 2130772290;
+			
+			// aapt resource value: 0x7f010144
+			public const int tsquare_state_today = 2130772292;
+			
+			// aapt resource value: 0x7f01013f
+			public const int tsquare_titleTextColor = 2130772287;
+			
 			// aapt resource value: 0x7f010118
 			public const int useCompatPadding = 2130772248;
 			
@@ -1165,32 +1204,32 @@ namespace StudyCalender.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0c0048
-			public const int abc_background_cache_hint_selector_material_dark = 2131492936;
+			// aapt resource value: 0x7f0c0053
+			public const int abc_background_cache_hint_selector_material_dark = 2131492947;
 			
-			// aapt resource value: 0x7f0c0049
-			public const int abc_background_cache_hint_selector_material_light = 2131492937;
+			// aapt resource value: 0x7f0c0054
+			public const int abc_background_cache_hint_selector_material_light = 2131492948;
 			
-			// aapt resource value: 0x7f0c004a
-			public const int abc_color_highlight_material = 2131492938;
+			// aapt resource value: 0x7f0c0055
+			public const int abc_color_highlight_material = 2131492949;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int abc_input_method_navigation_guard = 2131492868;
 			
-			// aapt resource value: 0x7f0c004b
-			public const int abc_primary_text_disable_only_material_dark = 2131492939;
+			// aapt resource value: 0x7f0c0056
+			public const int abc_primary_text_disable_only_material_dark = 2131492950;
 			
-			// aapt resource value: 0x7f0c004c
-			public const int abc_primary_text_disable_only_material_light = 2131492940;
+			// aapt resource value: 0x7f0c0057
+			public const int abc_primary_text_disable_only_material_light = 2131492951;
 			
-			// aapt resource value: 0x7f0c004d
-			public const int abc_primary_text_material_dark = 2131492941;
+			// aapt resource value: 0x7f0c0058
+			public const int abc_primary_text_material_dark = 2131492952;
 			
-			// aapt resource value: 0x7f0c004e
-			public const int abc_primary_text_material_light = 2131492942;
+			// aapt resource value: 0x7f0c0059
+			public const int abc_primary_text_material_light = 2131492953;
 			
-			// aapt resource value: 0x7f0c004f
-			public const int abc_search_url_text = 2131492943;
+			// aapt resource value: 0x7f0c005a
+			public const int abc_search_url_text = 2131492954;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int abc_search_url_text_normal = 2131492869;
@@ -1201,11 +1240,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0c0007
 			public const int abc_search_url_text_selected = 2131492871;
 			
-			// aapt resource value: 0x7f0c0050
-			public const int abc_secondary_text_material_dark = 2131492944;
+			// aapt resource value: 0x7f0c005b
+			public const int abc_secondary_text_material_dark = 2131492955;
 			
-			// aapt resource value: 0x7f0c0051
-			public const int abc_secondary_text_material_light = 2131492945;
+			// aapt resource value: 0x7f0c005c
+			public const int abc_secondary_text_material_light = 2131492956;
 			
 			// aapt resource value: 0x7f0c0008
 			public const int accent_material_dark = 2131492872;
@@ -1248,6 +1287,42 @@ namespace StudyCalender.Droid
 			
 			// aapt resource value: 0x7f0c0015
 			public const int button_material_light = 2131492885;
+			
+			// aapt resource value: 0x7f0c0048
+			public const int calendar_active_month_bg = 2131492936;
+			
+			// aapt resource value: 0x7f0c0049
+			public const int calendar_bg = 2131492937;
+			
+			// aapt resource value: 0x7f0c004a
+			public const int calendar_divider = 2131492938;
+			
+			// aapt resource value: 0x7f0c004b
+			public const int calendar_highlighted_day_bg = 2131492939;
+			
+			// aapt resource value: 0x7f0c004c
+			public const int calendar_inactive_month_bg = 2131492940;
+			
+			// aapt resource value: 0x7f0c004d
+			public const int calendar_selected_day_bg = 2131492941;
+			
+			// aapt resource value: 0x7f0c004e
+			public const int calendar_selected_range_bg = 2131492942;
+			
+			// aapt resource value: 0x7f0c004f
+			public const int calendar_text_active = 2131492943;
+			
+			// aapt resource value: 0x7f0c0050
+			public const int calendar_text_inactive = 2131492944;
+			
+			// aapt resource value: 0x7f0c0051
+			public const int calendar_text_selected = 2131492945;
+			
+			// aapt resource value: 0x7f0c005d
+			public const int calendar_text_selector = 2131492957;
+			
+			// aapt resource value: 0x7f0c0052
+			public const int calendar_text_unselectable = 2131492946;
 			
 			// aapt resource value: 0x7f0c0000
 			public const int cardview_dark_background = 2131492864;
@@ -1405,11 +1480,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0c003b
 			public const int switch_thumb_disabled_material_light = 2131492923;
 			
-			// aapt resource value: 0x7f0c0052
-			public const int switch_thumb_material_dark = 2131492946;
+			// aapt resource value: 0x7f0c005e
+			public const int switch_thumb_material_dark = 2131492958;
 			
-			// aapt resource value: 0x7f0c0053
-			public const int switch_thumb_material_light = 2131492947;
+			// aapt resource value: 0x7f0c005f
+			public const int switch_thumb_material_light = 2131492959;
 			
 			// aapt resource value: 0x7f0c003c
 			public const int switch_thumb_normal_material_dark = 2131492924;
@@ -1630,6 +1705,21 @@ namespace StudyCalender.Droid
 			
 			// aapt resource value: 0x7f070010
 			public const int abc_text_size_title_material_toolbar = 2131165200;
+			
+			// aapt resource value: 0x7f070074
+			public const int calendar_day_headers_paddingbottom = 2131165300;
+			
+			// aapt resource value: 0x7f070075
+			public const int calendar_month_title_bottommargin = 2131165301;
+			
+			// aapt resource value: 0x7f070076
+			public const int calendar_month_topmargin = 2131165302;
+			
+			// aapt resource value: 0x7f070077
+			public const int calendar_text_medium = 2131165303;
+			
+			// aapt resource value: 0x7f070078
+			public const int calendar_text_small = 2131165304;
 			
 			// aapt resource value: 0x7f070009
 			public const int cardview_compat_inset_shadow = 2131165193;
@@ -2017,334 +2107,337 @@ namespace StudyCalender.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int clock = 2130837579;
+			public const int calendar_bg_selector = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int contacts = 2130837580;
+			public const int clock = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int design_fab_background = 2130837581;
+			public const int contacts = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int design_snackbar_background = 2130837582;
+			public const int design_fab_background = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int flower = 2130837583;
+			public const int design_snackbar_background = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int hamburger = 2130837584;
+			public const int flower = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_assignment_black_24dp = 2130837585;
+			public const int hamburger = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_audiotrack = 2130837586;
+			public const int ic_assignment_black_24dp = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_audiotrack_light = 2130837587;
+			public const int ic_audiotrack = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_bluetooth_grey = 2130837588;
+			public const int ic_audiotrack_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_bluetooth_white = 2130837589;
+			public const int ic_bluetooth_grey = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_card_membership_black_24dp = 2130837590;
+			public const int ic_bluetooth_white = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_cast_dark = 2130837591;
+			public const int ic_card_membership_black_24dp = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_cast_disabled_light = 2130837592;
+			public const int ic_cast_dark = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_cast_grey = 2130837593;
+			public const int ic_cast_disabled_light = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_cast_light = 2130837594;
+			public const int ic_cast_grey = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_cast_off_light = 2130837595;
+			public const int ic_cast_light = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_cast_on_0_light = 2130837596;
+			public const int ic_cast_off_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_cast_on_1_light = 2130837597;
+			public const int ic_cast_on_0_light = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_cast_on_2_light = 2130837598;
+			public const int ic_cast_on_1_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_cast_on_light = 2130837599;
+			public const int ic_cast_on_2_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_cast_white = 2130837600;
+			public const int ic_cast_on_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_close_dark = 2130837601;
+			public const int ic_cast_white = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_close_light = 2130837602;
+			public const int ic_close_dark = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_collapse = 2130837603;
+			public const int ic_close_light = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_collapse_00000 = 2130837604;
+			public const int ic_collapse = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_collapse_00001 = 2130837605;
+			public const int ic_collapse_00000 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_collapse_00002 = 2130837606;
+			public const int ic_collapse_00001 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_collapse_00003 = 2130837607;
+			public const int ic_collapse_00002 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_collapse_00004 = 2130837608;
+			public const int ic_collapse_00003 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_collapse_00005 = 2130837609;
+			public const int ic_collapse_00004 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_collapse_00006 = 2130837610;
+			public const int ic_collapse_00005 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_collapse_00007 = 2130837611;
+			public const int ic_collapse_00006 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_collapse_00008 = 2130837612;
+			public const int ic_collapse_00007 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_collapse_00009 = 2130837613;
+			public const int ic_collapse_00008 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_collapse_00010 = 2130837614;
+			public const int ic_collapse_00009 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_collapse_00011 = 2130837615;
+			public const int ic_collapse_00010 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_collapse_00012 = 2130837616;
+			public const int ic_collapse_00011 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_collapse_00013 = 2130837617;
+			public const int ic_collapse_00012 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_collapse_00014 = 2130837618;
+			public const int ic_collapse_00013 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_collapse_00015 = 2130837619;
+			public const int ic_collapse_00014 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_errorstatus = 2130837620;
+			public const int ic_collapse_00015 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_expand = 2130837621;
+			public const int ic_errorstatus = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_expand_00000 = 2130837622;
+			public const int ic_expand = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_expand_00001 = 2130837623;
+			public const int ic_expand_00000 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_expand_00002 = 2130837624;
+			public const int ic_expand_00001 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_expand_00003 = 2130837625;
+			public const int ic_expand_00002 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_expand_00004 = 2130837626;
+			public const int ic_expand_00003 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_expand_00005 = 2130837627;
+			public const int ic_expand_00004 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_expand_00006 = 2130837628;
+			public const int ic_expand_00005 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_expand_00007 = 2130837629;
+			public const int ic_expand_00006 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_expand_00008 = 2130837630;
+			public const int ic_expand_00007 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_expand_00009 = 2130837631;
+			public const int ic_expand_00008 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_expand_00010 = 2130837632;
+			public const int ic_expand_00009 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_expand_00011 = 2130837633;
+			public const int ic_expand_00010 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_expand_00012 = 2130837634;
+			public const int ic_expand_00011 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_expand_00013 = 2130837635;
+			public const int ic_expand_00012 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_expand_00014 = 2130837636;
+			public const int ic_expand_00013 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_expand_00015 = 2130837637;
+			public const int ic_expand_00014 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_format_list_numbered_black_24dp = 2130837638;
+			public const int ic_expand_00015 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_help_black_24dp = 2130837639;
+			public const int ic_format_list_numbered_black_24dp = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_home_black_24dp = 2130837640;
+			public const int ic_help_black_24dp = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_media_pause = 2130837641;
+			public const int ic_home_black_24dp = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_media_play = 2130837642;
+			public const int ic_media_pause = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_media_route_disabled_mono_dark = 2130837643;
+			public const int ic_media_play = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_media_route_off_mono_dark = 2130837644;
+			public const int ic_media_route_disabled_mono_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_media_route_on_0_mono_dark = 2130837645;
+			public const int ic_media_route_off_mono_dark = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_media_route_on_1_mono_dark = 2130837646;
+			public const int ic_media_route_on_0_mono_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_media_route_on_2_mono_dark = 2130837647;
+			public const int ic_media_route_on_1_mono_dark = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_media_route_on_mono_dark = 2130837648;
+			public const int ic_media_route_on_2_mono_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_pause_dark = 2130837649;
+			public const int ic_media_route_on_mono_dark = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_pause_light = 2130837650;
+			public const int ic_pause_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_perm_contact_calendar_white_24dp = 2130837651;
+			public const int ic_pause_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_play_dark = 2130837652;
+			public const int ic_perm_contact_calendar_white_24dp = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_play_light = 2130837653;
+			public const int ic_play_dark = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_settings_white_24dp = 2130837654;
+			public const int ic_play_light = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_speaker_dark = 2130837655;
+			public const int ic_settings_white_24dp = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_speaker_group_dark = 2130837656;
+			public const int ic_speaker_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_speaker_group_light = 2130837657;
+			public const int ic_speaker_group_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_speaker_light = 2130837658;
+			public const int ic_speaker_group_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_successstatus = 2130837659;
+			public const int ic_speaker_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_tv_dark = 2130837660;
+			public const int ic_successstatus = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_tv_light = 2130837661;
+			public const int ic_tv_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int icon = 2130837662;
+			public const int ic_tv_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int IconCalender = 2130837663;
+			public const int icon = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int list = 2130837664;
+			public const int IconCalender = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int mr_dialog_material_background_dark = 2130837665;
+			public const int list = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int mr_dialog_material_background_light = 2130837666;
+			public const int mr_dialog_material_background_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int mr_ic_audiotrack_light = 2130837667;
+			public const int mr_dialog_material_background_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int mr_ic_cast_dark = 2130837668;
+			public const int mr_ic_audiotrack_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int mr_ic_cast_light = 2130837669;
+			public const int mr_ic_cast_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int mr_ic_close_dark = 2130837670;
+			public const int mr_ic_cast_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int mr_ic_close_light = 2130837671;
+			public const int mr_ic_close_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837672;
+			public const int mr_ic_close_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int mr_ic_media_route_connecting_mono_light = 2130837673;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int mr_ic_media_route_mono_dark = 2130837674;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int mr_ic_media_route_mono_light = 2130837675;
+			public const int mr_ic_media_route_mono_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int mr_ic_pause_dark = 2130837676;
+			public const int mr_ic_media_route_mono_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int mr_ic_pause_light = 2130837677;
+			public const int mr_ic_pause_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int mr_ic_play_dark = 2130837678;
+			public const int mr_ic_pause_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int mr_ic_play_light = 2130837679;
-			
-			// aapt resource value: 0x7f0200b8
-			public const int notification_template_icon_bg = 2130837688;
+			public const int mr_ic_play_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int profile_generic = 2130837680;
+			public const int mr_ic_play_light = 2130837680;
+			
+			// aapt resource value: 0x7f0200b9
+			public const int notification_template_icon_bg = 2130837689;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int reminders = 2130837681;
+			public const int profile_generic = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int roundedbg = 2130837682;
+			public const int reminders = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int roundedbgdark = 2130837683;
+			public const int roundedbg = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int send = 2130837684;
+			public const int roundedbgdark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int slideout = 2130837685;
+			public const int send = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int time = 2130837686;
+			public const int slideout = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int todo = 2130837687;
+			public const int time = 2130837687;
+			
+			// aapt resource value: 0x7f0200b8
+			public const int todo = 2130837688;
 			
 			static Drawable()
 			{
@@ -2359,8 +2452,8 @@ namespace StudyCalender.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f08008f
-			public const int action0 = 2131230863;
+			// aapt resource value: 0x7f080090
+			public const int action0 = 2131230864;
 			
 			// aapt resource value: 0x7f08005a
 			public const int action_bar = 2131230810;
@@ -2386,8 +2479,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08005b
 			public const int action_context_bar = 2131230811;
 			
-			// aapt resource value: 0x7f080093
-			public const int action_divider = 2131230867;
+			// aapt resource value: 0x7f080094
+			public const int action_divider = 2131230868;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2422,8 +2515,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080044
 			public const int buttonPanel = 2131230788;
 			
-			// aapt resource value: 0x7f080090
-			public const int cancel_action = 2131230864;
+			// aapt resource value: 0x7f080076
+			public const int calendar_grid = 2131230838;
+			
+			// aapt resource value: 0x7f080091
+			public const int cancel_action = 2131230865;
 			
 			// aapt resource value: 0x7f08002b
 			public const int center = 2131230763;
@@ -2437,8 +2533,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080052
 			public const int checkbox = 2131230802;
 			
-			// aapt resource value: 0x7f080096
-			public const int chronometer = 2131230870;
+			// aapt resource value: 0x7f080097
+			public const int chronometer = 2131230871;
 			
 			// aapt resource value: 0x7f080033
 			public const int clip_horizontal = 2131230771;
@@ -2488,8 +2584,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08001c
 			public const int end = 2131230748;
 			
-			// aapt resource value: 0x7f08009b
-			public const int end_padder = 2131230875;
+			// aapt resource value: 0x7f08009c
+			public const int end_padder = 2131230876;
 			
 			// aapt resource value: 0x7f080023
 			public const int enterAlways = 2131230755;
@@ -2533,8 +2629,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08003f
 			public const int image = 2131230783;
 			
-			// aapt resource value: 0x7f08009a
-			public const int info = 2131230874;
+			// aapt resource value: 0x7f08009b
+			public const int info = 2131230875;
 			
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
@@ -2542,11 +2638,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08002f
 			public const int left = 2131230767;
 			
-			// aapt resource value: 0x7f080094
-			public const int line1 = 2131230868;
+			// aapt resource value: 0x7f080095
+			public const int line1 = 2131230869;
 			
-			// aapt resource value: 0x7f080098
-			public const int line3 = 2131230872;
+			// aapt resource value: 0x7f080099
+			public const int line3 = 2131230873;
 			
 			// aapt resource value: 0x7f08000b
 			public const int listMode = 2131230731;
@@ -2563,8 +2659,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080075
 			public const int loadingProgressWheel = 2131230837;
 			
-			// aapt resource value: 0x7f080092
-			public const int media_actions = 2131230866;
+			// aapt resource value: 0x7f080093
+			public const int media_actions = 2131230867;
 			
 			// aapt resource value: 0x7f08001d
 			public const int middle = 2131230749;
@@ -2572,77 +2668,77 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080037
 			public const int mini = 2131230775;
 			
-			// aapt resource value: 0x7f080081
-			public const int mr_art = 2131230849;
-			
-			// aapt resource value: 0x7f080076
-			public const int mr_chooser_list = 2131230838;
-			
-			// aapt resource value: 0x7f080079
-			public const int mr_chooser_route_desc = 2131230841;
+			// aapt resource value: 0x7f080082
+			public const int mr_art = 2131230850;
 			
 			// aapt resource value: 0x7f080077
-			public const int mr_chooser_route_icon = 2131230839;
-			
-			// aapt resource value: 0x7f080078
-			public const int mr_chooser_route_name = 2131230840;
-			
-			// aapt resource value: 0x7f08007e
-			public const int mr_close = 2131230846;
-			
-			// aapt resource value: 0x7f080084
-			public const int mr_control_divider = 2131230852;
-			
-			// aapt resource value: 0x7f08008a
-			public const int mr_control_play_pause = 2131230858;
-			
-			// aapt resource value: 0x7f08008d
-			public const int mr_control_subtitle = 2131230861;
-			
-			// aapt resource value: 0x7f08008c
-			public const int mr_control_title = 2131230860;
-			
-			// aapt resource value: 0x7f08008b
-			public const int mr_control_title_container = 2131230859;
-			
-			// aapt resource value: 0x7f08007f
-			public const int mr_custom_control = 2131230847;
-			
-			// aapt resource value: 0x7f080080
-			public const int mr_default_control = 2131230848;
-			
-			// aapt resource value: 0x7f08007b
-			public const int mr_dialog_area = 2131230843;
+			public const int mr_chooser_list = 2131230839;
 			
 			// aapt resource value: 0x7f08007a
-			public const int mr_expandable_area = 2131230842;
+			public const int mr_chooser_route_desc = 2131230842;
 			
-			// aapt resource value: 0x7f08008e
-			public const int mr_group_expand_collapse = 2131230862;
+			// aapt resource value: 0x7f080078
+			public const int mr_chooser_route_icon = 2131230840;
 			
-			// aapt resource value: 0x7f080082
-			public const int mr_media_main_control = 2131230850;
+			// aapt resource value: 0x7f080079
+			public const int mr_chooser_route_name = 2131230841;
 			
-			// aapt resource value: 0x7f08007d
-			public const int mr_name = 2131230845;
-			
-			// aapt resource value: 0x7f080083
-			public const int mr_playback_control = 2131230851;
-			
-			// aapt resource value: 0x7f08007c
-			public const int mr_title_bar = 2131230844;
+			// aapt resource value: 0x7f08007f
+			public const int mr_close = 2131230847;
 			
 			// aapt resource value: 0x7f080085
-			public const int mr_volume_control = 2131230853;
+			public const int mr_control_divider = 2131230853;
+			
+			// aapt resource value: 0x7f08008b
+			public const int mr_control_play_pause = 2131230859;
+			
+			// aapt resource value: 0x7f08008e
+			public const int mr_control_subtitle = 2131230862;
+			
+			// aapt resource value: 0x7f08008d
+			public const int mr_control_title = 2131230861;
+			
+			// aapt resource value: 0x7f08008c
+			public const int mr_control_title_container = 2131230860;
+			
+			// aapt resource value: 0x7f080080
+			public const int mr_custom_control = 2131230848;
+			
+			// aapt resource value: 0x7f080081
+			public const int mr_default_control = 2131230849;
+			
+			// aapt resource value: 0x7f08007c
+			public const int mr_dialog_area = 2131230844;
+			
+			// aapt resource value: 0x7f08007b
+			public const int mr_expandable_area = 2131230843;
+			
+			// aapt resource value: 0x7f08008f
+			public const int mr_group_expand_collapse = 2131230863;
+			
+			// aapt resource value: 0x7f080083
+			public const int mr_media_main_control = 2131230851;
+			
+			// aapt resource value: 0x7f08007e
+			public const int mr_name = 2131230846;
+			
+			// aapt resource value: 0x7f080084
+			public const int mr_playback_control = 2131230852;
+			
+			// aapt resource value: 0x7f08007d
+			public const int mr_title_bar = 2131230845;
 			
 			// aapt resource value: 0x7f080086
-			public const int mr_volume_group_list = 2131230854;
+			public const int mr_volume_control = 2131230854;
 			
-			// aapt resource value: 0x7f080088
-			public const int mr_volume_item_icon = 2131230856;
+			// aapt resource value: 0x7f080087
+			public const int mr_volume_group_list = 2131230855;
 			
 			// aapt resource value: 0x7f080089
-			public const int mr_volume_slider = 2131230857;
+			public const int mr_volume_item_icon = 2131230857;
+			
+			// aapt resource value: 0x7f08008a
+			public const int mr_volume_slider = 2131230858;
 			
 			// aapt resource value: 0x7f080016
 			public const int multiply = 2131230742;
@@ -2743,8 +2839,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080013
 			public const int showTitle = 2131230739;
 			
-			// aapt resource value: 0x7f08009c
-			public const int sliding_tabs = 2131230876;
+			// aapt resource value: 0x7f08009d
+			public const int sliding_tabs = 2131230877;
 			
 			// aapt resource value: 0x7f08006c
 			public const int snackbar_action = 2131230828;
@@ -2773,8 +2869,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080031
 			public const int start = 2131230769;
 			
-			// aapt resource value: 0x7f080091
-			public const int status_bar_latest_event_content = 2131230865;
+			// aapt resource value: 0x7f080092
+			public const int status_bar_latest_event_content = 2131230866;
 			
 			// aapt resource value: 0x7f080065
 			public const int submit_area = 2131230821;
@@ -2782,11 +2878,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08000d
 			public const int tabMode = 2131230733;
 			
-			// aapt resource value: 0x7f080099
-			public const int text = 2131230873;
+			// aapt resource value: 0x7f08009a
+			public const int text = 2131230874;
 			
-			// aapt resource value: 0x7f080097
-			public const int text2 = 2131230871;
+			// aapt resource value: 0x7f080098
+			public const int text2 = 2131230872;
 			
 			// aapt resource value: 0x7f08004d
 			public const int textSpacerNoButtons = 2131230797;
@@ -2794,8 +2890,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080073
 			public const int textViewStatus = 2131230835;
 			
-			// aapt resource value: 0x7f080095
-			public const int time = 2131230869;
+			// aapt resource value: 0x7f080096
+			public const int time = 2131230870;
 			
 			// aapt resource value: 0x7f080043
 			public const int title = 2131230787;
@@ -2803,8 +2899,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f080048
 			public const int title_template = 2131230792;
 			
-			// aapt resource value: 0x7f08009d
-			public const int toolbar = 2131230877;
+			// aapt resource value: 0x7f08009e
+			public const int toolbar = 2131230878;
 			
 			// aapt resource value: 0x7f080032
 			public const int top = 2131230770;
@@ -2824,8 +2920,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f08000a
 			public const int view_offset_helper = 2131230730;
 			
-			// aapt resource value: 0x7f080087
-			public const int volume_item_container = 2131230855;
+			// aapt resource value: 0x7f080088
+			public const int volume_item_container = 2131230856;
 			
 			// aapt resource value: 0x7f080022
 			public const int withText = 2131230754;
@@ -3029,64 +3125,70 @@ namespace StudyCalender.Droid
 			public const int loadingprogress = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int mr_chooser_dialog = 2130903080;
+			public const int month = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int mr_chooser_list_item = 2130903081;
+			public const int mr_chooser_dialog = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_controller_material_dialog_b = 2130903082;
+			public const int mr_chooser_list_item = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int mr_controller_volume_item = 2130903083;
+			public const int mr_controller_material_dialog_b = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_playback_control = 2130903084;
+			public const int mr_controller_volume_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_volume_control = 2130903085;
+			public const int mr_playback_control = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_media_action = 2130903086;
+			public const int mr_volume_control = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_media_cancel_action = 2130903087;
+			public const int notification_media_action = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_big_media = 2130903088;
+			public const int notification_media_cancel_action = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_big_media_narrow = 2130903089;
+			public const int notification_template_big_media = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_lines = 2130903090;
+			public const int notification_template_big_media_narrow = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_media = 2130903091;
+			public const int notification_template_lines = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_part_chronometer = 2130903092;
+			public const int notification_template_media = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_part_time = 2130903093;
+			public const int notification_template_part_chronometer = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int select_dialog_item_material = 2130903094;
+			public const int notification_template_part_time = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int select_dialog_multichoice_material = 2130903095;
+			public const int select_dialog_item_material = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int select_dialog_singlechoice_material = 2130903096;
+			public const int select_dialog_multichoice_material = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int support_simple_spinner_dropdown_item = 2130903097;
+			public const int select_dialog_singlechoice_material = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int Tabbar = 2130903098;
+			public const int support_simple_spinner_dropdown_item = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int Toolbar = 2130903099;
+			public const int Tabbar = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int Toolbar = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int week = 2130903101;
 			
 			static Layout()
 			{
@@ -3158,8 +3260,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f090021
 			public const int abc_toolbar_collapse_description = 2131296289;
 			
-			// aapt resource value: 0x7f090027
-			public const int app_name = 2131296295;
+			// aapt resource value: 0x7f09002a
+			public const int app_name = 2131296298;
 			
 			// aapt resource value: 0x7f090023
 			public const int appbar_scrolling_view_behavior = 2131296291;
@@ -3170,8 +3272,17 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f090025
 			public const int character_counter_pattern = 2131296293;
 			
+			// aapt resource value: 0x7f090029
+			public const int day_name_format = 2131296297;
+			
+			// aapt resource value: 0x7f090027
+			public const int invalid_date = 2131296295;
+			
 			// aapt resource value: 0x7f090026
 			public const int library_name = 2131296294;
+			
+			// aapt resource value: 0x7f090028
+			public const int month_name_format = 2131296296;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
@@ -3249,8 +3360,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0b015a
 			public const int Animation_Design_BottomSheetDialog = 2131427674;
 			
-			// aapt resource value: 0x7f0b0174
-			public const int AppCompatDialogStyle = 2131427700;
+			// aapt resource value: 0x7f0b0178
+			public const int AppCompatDialogStyle = 2131427704;
 			
 			// aapt resource value: 0x7f0b00a5
 			public const int Base_AlertDialog_AppCompat = 2131427493;
@@ -3684,6 +3795,18 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0b015b
 			public const int Base_Widget_Design_TabLayout = 2131427675;
 			
+			// aapt resource value: 0x7f0b0172
+			public const int CalendarCell = 2131427698;
+			
+			// aapt resource value: 0x7f0b0173
+			public const int CalendarCell_CalendarDate = 2131427699;
+			
+			// aapt resource value: 0x7f0b0174
+			public const int CalendarCell_DayHeader = 2131427700;
+			
+			// aapt resource value: 0x7f0b0175
+			public const int CalendarTitle = 2131427701;
+			
 			// aapt resource value: 0x7f0b0017
 			public const int CardView = 2131427351;
 			
@@ -3693,11 +3816,11 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int CardView_Light = 2131427354;
 			
-			// aapt resource value: 0x7f0b0172
-			public const int MyTheme = 2131427698;
+			// aapt resource value: 0x7f0b0176
+			public const int MyTheme = 2131427702;
 			
-			// aapt resource value: 0x7f0b0173
-			public const int MyTheme_Base = 2131427699;
+			// aapt resource value: 0x7f0b0177
+			public const int MyTheme_Base = 2131427703;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int Platform_AppCompat = 2131427378;
@@ -5078,6 +5201,36 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
+			public static int[] CalendarPickerView = new int[] {
+					16842964,
+					2130772284,
+					2130772285,
+					2130772286,
+					2130772287,
+					2130772288,
+					2130772289};
+			
+			// aapt resource value: 0
+			public const int CalendarPickerView_android_background = 0;
+			
+			// aapt resource value: 2
+			public const int CalendarPickerView_tsquare_dayBackground = 2;
+			
+			// aapt resource value: 3
+			public const int CalendarPickerView_tsquare_dayTextColor = 3;
+			
+			// aapt resource value: 5
+			public const int CalendarPickerView_tsquare_displayHeader = 5;
+			
+			// aapt resource value: 1
+			public const int CalendarPickerView_tsquare_dividerColor = 1;
+			
+			// aapt resource value: 6
+			public const int CalendarPickerView_tsquare_headerTextColor = 6;
+			
+			// aapt resource value: 4
+			public const int CalendarPickerView_tsquare_titleTextColor = 4;
+			
 			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
@@ -5611,18 +5764,18 @@ namespace StudyCalender.Droid
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ProgressWheel = new int[] {
-					2130772284,
-					2130772285,
-					2130772286,
-					2130772287,
-					2130772288,
-					2130772289,
-					2130772290,
-					2130772291,
-					2130772292,
-					2130772293,
-					2130772294,
-					2130772295};
+					2130772297,
+					2130772298,
+					2130772299,
+					2130772300,
+					2130772301,
+					2130772302,
+					2130772303,
+					2130772304,
+					2130772305,
+					2130772306,
+					2130772307,
+					2130772308};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
@@ -6157,6 +6310,36 @@ namespace StudyCalender.Droid
 			
 			// aapt resource value: 1
 			public const int ViewStubCompat_android_layout = 1;
+			
+			public static int[] calendar_cell = new int[] {
+					2130772290,
+					2130772291,
+					2130772292,
+					2130772293,
+					2130772294,
+					2130772295,
+					2130772296};
+			
+			// aapt resource value: 1
+			public const int calendar_cell_tsquare_state_current_month = 1;
+			
+			// aapt resource value: 6
+			public const int calendar_cell_tsquare_state_highlighted = 6;
+			
+			// aapt resource value: 3
+			public const int calendar_cell_tsquare_state_range_first = 3;
+			
+			// aapt resource value: 5
+			public const int calendar_cell_tsquare_state_range_last = 5;
+			
+			// aapt resource value: 4
+			public const int calendar_cell_tsquare_state_range_middle = 4;
+			
+			// aapt resource value: 0
+			public const int calendar_cell_tsquare_state_selectable = 0;
+			
+			// aapt resource value: 2
+			public const int calendar_cell_tsquare_state_today = 2;
 			
 			static Styleable()
 			{

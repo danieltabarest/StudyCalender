@@ -3,6 +3,7 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Acr.UserDialogs.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Acr.UserDialogs.Interface.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\AndHUD.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\AndroidTimesSquare.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\CachedImageCircle.Forms.Plugin.Abstractions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\CachedImageCircle.Forms.Plugin.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\FFImageLoading.dll
@@ -34,6 +35,8 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\XamForms.Controls.Calendar.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\XamForms.Controls.Calendar.Droid.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\System.Core.dll

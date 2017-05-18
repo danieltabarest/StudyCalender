@@ -196,3 +196,7 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\AndroidTimesSquare.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\XamForms.Controls.Calendar.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\XamForms.Controls.Calendar.Droid.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\AndroidTimesSquare.xml

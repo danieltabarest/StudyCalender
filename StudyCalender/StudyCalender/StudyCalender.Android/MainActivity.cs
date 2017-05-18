@@ -16,7 +16,7 @@ namespace StudyCalender.Droid
             ToolbarResource = Resource.Layout.Toolbar;
              
             UserDialogs.Init(this);
-
+            XamForms.Controls.Droid.Calendar.Init();
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);

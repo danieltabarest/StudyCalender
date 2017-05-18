@@ -103,6 +103,7 @@ class MonoPackageManager_Resources {
 		"Acr.UserDialogs.dll",
 		"Acr.UserDialogs.Interface.dll",
 		"AndHUD.dll",
+		"AndroidTimesSquare.dll",
 		"CachedImageCircle.Forms.Plugin.Abstractions.dll",
 		"CachedImageCircle.Forms.Plugin.Android.dll",
 		"FFImageLoading.dll",
@@ -134,6 +135,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"XamForms.Controls.Calendar.dll",
+		"XamForms.Controls.Calendar.Droid.dll",
 		"StudyCalender.dll",
 		"Newtonsoft.Json.dll",
 	};
