@@ -99,6 +99,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "StudyCalender.Android.dll" comes first in this list. */
 		"StudyCalender.Android.dll",
+		"Acr.Support.Android.dll",
+		"Acr.UserDialogs.dll",
+		"Acr.UserDialogs.Interface.dll",
+		"AndHUD.dll",
 		"CachedImageCircle.Forms.Plugin.Abstractions.dll",
 		"CachedImageCircle.Forms.Plugin.Android.dll",
 		"FFImageLoading.dll",
@@ -108,6 +112,8 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.Abstractions.dll",
 		"ImageCircle.Forms.Plugin.Android.dll",
+		"Plugin.Calendars.Abstractions.dll",
+		"Plugin.Calendars.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.Abstractions.dll",
 		"Plugin.Media.dll",
@@ -115,6 +121,7 @@ class MonoPackageManager_Resources {
 		"Plugin.Messaging.dll",
 		"Plugin.Permissions.Abstractions.dll",
 		"Plugin.Permissions.dll",
+		"Splat.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

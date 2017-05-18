@@ -1,7 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Plugin.Permissions; 
+using Plugin.Permissions;
+using Acr.UserDialogs;
 using Plugin.Permissions.Abstractions;
 
 namespace StudyCalender.Droid
@@ -13,6 +14,8 @@ namespace StudyCalender.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+             
+            UserDialogs.Init(this);
 
             base.OnCreate(bundle);
 

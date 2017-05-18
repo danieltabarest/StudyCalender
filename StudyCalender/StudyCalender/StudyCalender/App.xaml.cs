@@ -1,4 +1,10 @@
-﻿using StudyCalender.Views;
+﻿using StudyCalender.Core.Helpers;
+using StudyCalender.Core.Services;
+using StudyCalender.Core.ViewModels;
+using StudyCalender.Helpers;
+using StudyCalender.Pages;
+using StudyCalender.Services;
+using StudyCalender.Views;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +18,17 @@ namespace StudyCalender
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            DependencyService.Register<IReportingService, ReportingService>();
+            DependencyService.Register<ViewProvider>();
+
+            RegisterViews();
+
+            var viewProvider = DependencyService.Get<ViewProvider>();
+
+
+            //MainPage = new MainPage();
+
+            MainPage = new NavigationPage(viewProvider.GetView(ViewModelProvider.GetViewModel<CalendarsViewModel>()) as Page);
 
             //SetMainPage();
         }
@@ -36,5 +52,37 @@ namespace StudyCalender
                 }
             };
         }
+
+
+        private void RegisterViews()
+        {
+            var viewProvider = DependencyService.Get<ViewProvider>();
+
+            viewProvider.Register<CalendarsViewModel, CalendarsPage>();
+            viewProvider.Register<CalendarEditorViewModel, CalendarEditorPage>();
+            viewProvider.Register<DateTimeRangeViewModel, DateTimeRangePage>();
+            viewProvider.Register<EventsViewModel, EventsPage>();
+            viewProvider.Register<EventEditorViewModel, EventEditorPage>();
+            viewProvider.Register<ReminderEditorViewModel, ReminderEditorPage>();
+        }
+        #region Lifecycle stuff
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
+
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
+
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+
+        #endregion
+
     }
 }

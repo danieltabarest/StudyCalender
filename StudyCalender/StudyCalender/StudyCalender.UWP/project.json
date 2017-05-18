@@ -1,6 +1,9 @@
 ﻿{
   "dependencies": {
+    "Acr.UserDialogs": "5.3.0",
+    "CClarke.Plugin.Calendars": "0.6.33-beta",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Splat": "1.6.2",
     "Xam.Plugin.Media": "2.6.2",
     "Xam.Plugins.Forms.CachedImageCircle": "0.0.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",

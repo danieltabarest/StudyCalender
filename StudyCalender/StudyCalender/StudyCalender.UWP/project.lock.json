@@ -3,6 +3,40 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -320,6 +354,14 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -2145,6 +2187,40 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -2690,6 +2766,14 @@
       "runtime.win8-arm.runtime.native.System.IO.Compression/4.0.1": {
         "native": {
           "runtimes/win8-arm/native/clrcompression.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -4367,6 +4451,40 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -4951,6 +5069,14 @@
         },
         "native": {
           "runtimes/win8-arm-aot/native/_._": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -6628,6 +6754,40 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -7182,6 +7342,14 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -8859,6 +9027,40 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -9452,6 +9654,14 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -11129,6 +11339,40 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -11683,6 +11927,14 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -13360,6 +13612,40 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Acr.UserDialogs/5.3.0": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CClarke.Plugin.Calendars/0.6.33-beta": {
+        "compile": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Calendars.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Calendars.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -13953,6 +14239,14 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -15631,6 +15925,126 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/5.3.0": {
+      "sha512": "sJIHYbo1ZccppnubaZSyi7SDAU7o8K5yKvyQbNk15cKS4yy/whDXlsUWIpytC1WeChJuJ95CFkn97sWjnc6wWw==",
+      "type": "package",
+      "files": [
+        "Acr.UserDialogs.5.3.0.nupkg.sha512",
+        "Acr.UserDialogs.nuspec",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.dll.mdb",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.pdb",
+        "lib/MonoAndroid10/Acr.UserDialogs.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.dll.mdb",
+        "lib/MonoAndroid10/Acr.UserDialogs.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll.mdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.dll.mdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.pdb",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.Interface.dll",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.Interface.pdb",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.dll",
+        "lib/uap10.0/Acr.UserDialogs.Interface.dll",
+        "lib/uap10.0/Acr.UserDialogs.Interface.pdb",
+        "lib/uap10.0/Acr.UserDialogs.dll",
+        "lib/uap10.0/Acr.UserDialogs.pdb",
+        "lib/uap10.0/Acr.UserDialogs.pri",
+        "lib/uap10.0/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/uap10.0/Acr.UserDialogs/ActionSheetContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/DatePickerControl.xaml",
+        "lib/uap10.0/Acr.UserDialogs/LoginContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/ProgressContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/PromptContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/Properties/Acr.UserDialogs.rd.xml",
+        "lib/uap10.0/Acr.UserDialogs/TimePickerControl.xaml",
+        "lib/wp8/Acr.UserDialogs.Interface.dll",
+        "lib/wp8/Acr.UserDialogs.Interface.pdb",
+        "lib/wp8/Acr.UserDialogs.dll",
+        "lib/wp8/Acr.UserDialogs.pdb",
+        "lib/wpa81/Acr.UserDialogs.Interface.dll",
+        "lib/wpa81/Acr.UserDialogs.Interface.pdb",
+        "lib/wpa81/Acr.UserDialogs.dll",
+        "lib/wpa81/Acr.UserDialogs.pdb",
+        "lib/wpa81/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/wpa81/Acr.UserDialogs/ActionSheetContentDialog.xaml",
+        "lib/wpa81/Acr.UserDialogs/ActionSheetContentDialog.xbf",
+        "lib/wpa81/Acr.UserDialogs/LoginContentDialog.xaml",
+        "lib/wpa81/Acr.UserDialogs/LoginContentDialog.xbf",
+        "lib/wpa81/Acr.UserDialogs/ProgressContentDialog.xaml",
+        "lib/wpa81/Acr.UserDialogs/ProgressContentDialog.xbf",
+        "lib/wpa81/Acr.UserDialogs/PromptContentDialog.xaml",
+        "lib/wpa81/Acr.UserDialogs/PromptContentDialog.xbf"
+      ]
+    },
+    "CClarke.Plugin.Calendars/0.6.33-beta": {
+      "sha512": "dtlSC6D2GjixT4WaZWbe/K/6tg8jfgeRrBOQnWmVYLFYdP45PR9sEzYHnMHxoANaTGrRyrBDZ2BBtSgHcLjxsg==",
+      "type": "package",
+      "files": [
+        "CClarke.Plugin.Calendars.0.6.33-beta.nupkg.sha512",
+        "CClarke.Plugin.Calendars.nuspec",
+        "lib/MonoAndroid10/Plugin.Calendars.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Calendars.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Calendars.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Calendars.dll",
+        "lib/MonoAndroid10/Plugin.Calendars.xml",
+        "lib/UAP10/Plugin.Calendars.Abstractions.dll",
+        "lib/UAP10/Plugin.Calendars.Abstractions.pdb",
+        "lib/UAP10/Plugin.Calendars.Abstractions.xml",
+        "lib/UAP10/Plugin.Calendars.dll",
+        "lib/UAP10/Plugin.Calendars.pdb/Plugin.Calendars.XML",
+        "lib/UAP10/Plugin.Calendars.pdxmlb/Plugin.Calendars.pdb",
+        "lib/Xamarin.iOS10/Plugin.Calendars.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Calendars.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Calendars.dll",
+        "lib/Xamarin.iOS10/Plugin.Calendars.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Calendars.xml"
+      ]
+    },
+    "Coding4Fun.Toolkit.Controls/2.1.8": {
+      "sha512": "PCRWgCiW9H8qzT8xYxNtpq4ZWpvh2gtrKAnWtEOXzapyXTEt8esCt0cqRwvosW+bytyfohonmB7UxB0EGXmdsQ==",
+      "type": "package",
+      "files": [
+        "Coding4Fun.Toolkit.Controls.2.1.8.nupkg.sha512",
+        "Coding4Fun.Toolkit.Controls.nuspec",
+        "content/ReadMe.Coding4Fun.Toolkit.txt",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Cancel.png",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Check.png",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.pri",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/netcore451/Coding4Fun.Toolkit.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.pri",
+        "lib/windowsphone8/Coding4Fun.Toolkit.Controls.dll",
+        "lib/windowsphone8/Coding4Fun.Toolkit.dll",
+        "lib/windowsphone8/cs/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/da/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/de/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/es/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/hu/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/it/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ko/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/no/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pl/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pt/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ru/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/sk/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.pri",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/wpa81/Coding4Fun.Toolkit.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.pri"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -17001,6 +17415,36 @@
         "runtime.win8-arm.runtime.native.System.IO.Compression.4.0.1.nupkg.sha512",
         "runtime.win8-arm.runtime.native.System.IO.Compression.nuspec",
         "runtimes/win8-arm/native/clrcompression.dll"
+      ]
+    },
+    "Splat/1.6.2": {
+      "sha512": "DeH0MxPU+D4JchkIDPYG4vUT+hsWs9S41cFle0/4K5EJMXWurx5DzAkj2366DfK14/XKNhsu6tCl4dZXJ3CD4w==",
+      "type": "package",
+      "files": [
+        "Splat.1.6.2.nupkg.sha512",
+        "Splat.nuspec",
+        "lib/MonoMac/Splat.dll",
+        "lib/MonoMac/Splat.dll.mdb",
+        "lib/Net45/Splat.dll",
+        "lib/Net45/Splat.pdb",
+        "lib/NetCore45/Splat.dll",
+        "lib/NetCore45/Splat.pdb",
+        "lib/NetCore45/Splat.pri",
+        "lib/Portable-Win81+Wpa81/Splat.dll",
+        "lib/Portable-Win81+Wpa81/Splat.pdb",
+        "lib/Portable-Win81+Wpa81/Splat.pri",
+        "lib/Portable-net45+win+wpa81+wp80/Splat.dll",
+        "lib/Xamarin.Mac10/Splat-XamarinMac.csproj.FilesWrittenAbsolute.txt",
+        "lib/Xamarin.Mac10/Splat.dll",
+        "lib/Xamarin.Mac10/Splat.dll.mdb",
+        "lib/Xamarin.iOS10/Splat.dll",
+        "lib/Xamarin.iOS10/Splat.dll.mdb",
+        "lib/monoandroid/Splat.dll",
+        "lib/monoandroid/Splat.dll.mdb",
+        "lib/monotouch/Splat.dll",
+        "lib/monotouch/Splat.dll.mdb",
+        "lib/wp8/Splat.dll",
+        "lib/wp8/Splat.pdb"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -22234,7 +22678,10 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Acr.UserDialogs >= 5.3.0",
+      "CClarke.Plugin.Calendars >= 0.6.33-beta",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
+      "Splat >= 1.6.2",
       "Xam.Plugin.Media >= 2.6.2",
       "Xam.Plugins.Forms.CachedImageCircle >= 0.0.0.1",
       "Xam.Plugins.Forms.ImageCircle >= 1.8.1",
