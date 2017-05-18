@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StudyCalender.App">
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Converters="clr-namespace:StudyCalender.Converters;assembly=StudyCalender"
+             x:Class="StudyCalender.App">
   <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
@@ -14,6 +16,21 @@
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
+
+
+            <!-- STYLES -->
+
+            <Style x:Key="PropertyLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="LineBreakMode" Value="NoWrap"/>
+            </Style>
+
+            <!-- CONVERTERS -->
+            <Converters:BooleanInverseConverter x:Key="BooleanInverseConverter"/>
+            <Converters:StringToColorConverter x:Key="StringToColorConverter"/>
+            <Converters:TimeRangeConverter x:Key="TimeRangeConverter"/>
+            <Converters:EnumToIntConverter x:Key="EnumToIntConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
