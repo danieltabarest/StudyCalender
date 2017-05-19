@@ -26,34 +26,6 @@ namespace StudyCalender.Core.ViewModels
 
         #region Properties
 
-        private DateTime? _date;
-        public DateTime? Date
-        {
-            get
-            {
-                return _date;
-            }
-            set
-            {
-                if (_date != value)
-                {
-                    _date = value;
-                    HasChanged();
-                }
-                /*_date = value;
-                NotifyPropertyChanged(nameof(Date));*/
-            }
-        }
-
-        public ICommand DateChosen
-        {
-            get
-            {
-                return new Command((obj) => {
-                    System.Diagnostics.Debug.WriteLine(obj as DateTime?);
-                });
-            }
-        }
 
         public string Title { get { return "Select Calendar"; } }
 
@@ -141,23 +113,7 @@ namespace StudyCalender.Core.ViewModels
             IsBusy = false;
         }
 
-        public async void CalendarClick(List<DateTime> calendar)
-        {
-            try
-            {
-                await Navigator.PushAsync<EventsViewModel>(vm =>
-                {
-
-                    vm.Calendar = new Calendar {AccountName= "daniel", Color="",ExternalID="15",Name= "daniel" };
-                    vm.Start = calendar.First().Date;
-                    vm.End = calendar.First().Date;
-                });
-            }
-            catch (Exception ex)
-            {
-                ReportError(ex);
-            }
-        }
+  
 
 
 

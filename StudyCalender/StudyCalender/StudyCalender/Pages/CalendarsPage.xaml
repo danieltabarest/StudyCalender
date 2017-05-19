@@ -16,8 +16,8 @@
     </ContentPage.ToolbarItems>
 
     <Grid>
-        <StackLayout Grid.Row="0" x:Name="StackCalendars"></StackLayout>
-        <ListView Grid.Row="1" x:Name="Calendars"
+        
+        <ListView  x:Name="Calendars"
               ItemsSource="{Binding GroupedCalendars}"
               IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Key}"
@@ -40,6 +40,8 @@
                     </TextCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            
+            
         </ListView>
     </Grid>
 </ContentPage>

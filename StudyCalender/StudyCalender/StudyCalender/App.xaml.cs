@@ -30,7 +30,7 @@ namespace StudyCalender
 
             //MainPage = new MainPage();
 
-            MainPage = new NavigationPage(viewProvider.GetView(ViewModelProvider.GetViewModel<CalendarsViewModel>()) as Page);
+            MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<MainPageViewModel>()) as Page;
 
             //SetMainPage();
 
@@ -62,6 +62,7 @@ namespace StudyCalender
         {
             var viewProvider = DependencyService.Get<ViewProvider>();
 
+            viewProvider.Register<MainPageViewModel, MainPage>();
             viewProvider.Register<CalendarsViewModel, CalendarsPage>();
             viewProvider.Register<CalendarEditorViewModel, CalendarEditorPage>();
             viewProvider.Register<DateTimeRangeViewModel, DateTimeRangePage>();

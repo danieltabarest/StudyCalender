@@ -53,6 +53,7 @@
     <Compile Include="Enums\ToolbarItemType.cs" />
     <Compile Include="Extensions\ColorExtensions.cs" />
     <Compile Include="Extensions\VisualElementExtensions.cs" />
+    <Compile Include="Helpers\GlobalInfo.cs" />
     <Compile Include="Helpers\Grouping.cs" />
     <Compile Include="Helpers\MessengingCenterAlert.cs" />
     <Compile Include="Helpers\ModalViewModelBase.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Services\MockDataStore.cs" />
     <Compile Include="Services\ReportingService.cs" />
     <Compile Include="ViewModels\CalendarEditorViewModel.cs" />
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\CalendarsViewModel.cs" />
     <Compile Include="ViewModels\CalendarVM.cs" />
     <Compile Include="ViewModels\DateTimeRangeViewModel.cs" />

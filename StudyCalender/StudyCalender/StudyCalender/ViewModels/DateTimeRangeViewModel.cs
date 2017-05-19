@@ -1,8 +1,11 @@
 ﻿using System;
 using StudyCalender.Core.Helpers;
 using System.Windows.Input;
+
 using Xamarin.Forms;
 using Plugin.Calendars.Abstractions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace StudyCalender.Core.ViewModels
 {
@@ -17,6 +20,34 @@ namespace StudyCalender.Core.ViewModels
 
         #region Properties
 
+        private DateTime? _date;
+        public DateTime? Date
+        {
+            get
+            {
+                return _date;
+            }
+            set
+            {
+                if (_date != value)
+                {
+                    _date = value;
+                    HasChanged();
+                }
+                /*_date = value;
+                NotifyPropertyChanged(nameof(Date));*/
+            }
+        }
+
+        public ICommand DateChosen
+        {
+            get
+            {
+                return new Command((obj) => {
+                    System.Diagnostics.Debug.WriteLine(obj as DateTime?);
+                });
+            }
+        }
         public string Title { get { return "Select Time Range"; } }
 
         public Calendar Calendar { get; set; }
@@ -91,6 +122,7 @@ namespace StudyCalender.Core.ViewModels
 
         public override void Initialize()
         {
+            GlobalInfo.DateTimeRangeViewModel = this;
             var today = DateTime.Today;
             StartDate = new DateTime(today.Year, today.Month, 1);
             EndDate = StartDate.AddMonths(1);
@@ -112,5 +144,30 @@ namespace StudyCalender.Core.ViewModels
                 ReportError(ex);
             }
         }
+        public async void CalendarClick(List<DateTime> SelectedDates, StudyCalender.Helpers.Navigator navigator)
+        {
+            try
+            {
+                var value = SelectedDates.First();
+                _start = new DateTime(value.Year, value.Month, value.Day,
+                         _start.Hour, _start.Minute, _start.Second, _start.Kind);
+                _end = _start.AddDays(1);
+                
+                await navigator.PushAsync<EventsViewModel>(vm =>
+                {
+                    //var cal = GroupedCalendars.First().Key;
+                    //vm.Calendar = new Calendar { AccountName = "daniel", Color = "", ExternalID = "15", Name = "" };
+                    vm.Calendar = Calendar;
+                    vm.Start = _start;
+                    vm.End = _end;
+                });
+            }
+            catch (Exception ex)
+            {
+                ReportError(ex);
+            }
+        }
+
+
     }
 }

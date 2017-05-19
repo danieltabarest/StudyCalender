@@ -4,6 +4,7 @@ using StudyCalender.Views;
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System;
+using StudyCalender.Pages;
 
 namespace StudyCalender
 {
@@ -65,7 +66,7 @@ namespace StudyCalender
 
 
             masterPageItems = new List<MasterPageItem>();
-
+           
 
             masterPageItems.Add(new MasterPageItem
             {
@@ -81,14 +82,13 @@ namespace StudyCalender
                 TargetType = typeof(Agenda)
             });
 
+
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Calender",
                 IconSource = "ic_format_list_numbered_black_24dp.png",
-                TargetType = typeof(Calender)
+                TargetType = typeof(CalendarsPage)
             });
-
-
 
             masterPageItems.Add(new MasterPageItem
             {
