@@ -95,6 +95,7 @@ namespace StudyCalender.Core.ViewModels
             try
             {
                 var events = await CrossCalendars.Current.GetEventsAsync(Calendar, Start, End);
+                GlobalInfo.Events = events;
                 EventsByDay = GroupEventsByDay(events);
             }
             catch (Exception ex)

@@ -1,4 +1,5 @@
 ﻿
+using Plugin.Calendars.Abstractions;
 using StudyCalender.Core.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace StudyCalender
     {
         public static Application Application;
         public static DateTimeRangeViewModel DateTimeRangeViewModel;
+        public static IList<CalendarEvent> Events;
+        public static Calendar Calendar;
 
 
     }

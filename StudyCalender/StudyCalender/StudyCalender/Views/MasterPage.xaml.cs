@@ -23,11 +23,8 @@ namespace StudyCalender
         {
             InitializeComponent();
 
-
             tapSettingsGestureRecognizer = new TapGestureRecognizer();
-
             Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
-
 
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += async (s, e) =>

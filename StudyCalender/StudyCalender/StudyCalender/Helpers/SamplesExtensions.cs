@@ -17,10 +17,10 @@ namespace StudyCalender.Helpers
         public static EmailMessageBuilder BuildSampleEmail(bool sendAsHtml = false)
         {
             var builder = new EmailMessageBuilder()
-                .To("to.plugins@xamarin.com")
-                .Cc("cc.plugins@xamarin.com")
-                .Bcc(new[] { "bcc1.plugins@xamarin.com", "bcc2.plugins@xamarin.com" })
-                .Subject("Xamarin Messaging Plugin");
+                .To("to.danieltabares17@gmail.com")
+                .Cc("cc.danieltabares17@gmail.com")
+                .Bcc(new[] { "bcc1.danieltabares17@gmail.com", "bcc2.danieltabares17@gmail.com" })
+                .Subject("Study Calender FeedBack");
 
 #if __ANDROID__ || __IOS__
 

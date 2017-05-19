@@ -8,6 +8,8 @@ using StudyCalender.Core.ViewModels;
 using StudyCalender.Helpers;
 using System;
 using Xamarin.Forms;
+using XamForms.Controls;
+using Plugin.Calendars;
 
 namespace StudyCalender.Pages
 {
@@ -22,7 +24,7 @@ namespace StudyCalender.Pages
 
         protected override void OnAppearing()
         {
-            
+
             if (calendar == null)
             {
                 CreateCalender();
@@ -39,55 +41,99 @@ namespace StudyCalender.Pages
 
         private void CreateCalender()
         {
-            calendar = new XamForms.Controls.Calendar
+            try
             {
-                //MaxDate=DateTime.Now.AddDays(30), 
-                MinDate = DateTime.Now.AddDays(-1),
-                MultiSelectDates = false,
-                DisableAllDates = false,
-                WeekdaysShow = true,
-                ShowNumberOfWeek = true,
-                ShowNumOfMonths = 1,
-                EnableTitleMonthYearView = true,
-                SelectedDate = DateTime.Now,
-                WeekdaysTextColor = Color.Teal,
-                StartDay = DayOfWeek.Monday,
-                SelectedTextColor = Color.Fuchsia,
-                //SpecialDates = new List<SpecialDate>{
-                //    new SpecialDate(DateTime.Now.AddDays(2)) { BackgroundColor = Color.Green, TextColor = Color.Accent, BorderColor = Color.Lime, BorderWidth=8, Selectable = true },
-                //    new SpecialDate(DateTime.Now.AddDays(3))
-                //    {
-                //        BackgroundColor = Color.Green,
-                //        TextColor = Color.Blue,
-                //        Selectable = true,
-                //        BackgroundPattern = new BackgroundPattern(1)
-                //        {
-                //            Pattern = new List<Pattern>
-                //            {
-                //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Red},
-                //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Purple},
-                //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Green},
-                //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Yellow}
-                //            }
-                //        }
-                //    }
-                //}
-            };
 
-            calendar.DateClicked += (sender, e) =>
-            {
-                if (calendar.SelectedDates.Count() == 0)
+
+                calendar = new XamForms.Controls.Calendar
                 {
-                    return;
-                }
-                vm.CalendarClick(calendar.SelectedDates, new Navigator(this));
-            };
-            vm = GlobalInfo.DateTimeRangeViewModel;// new DateTimeRangeViewModel();//new CalendarsViewModel();//
-            calendar.SetBinding(XamForms.Controls.Calendar.DateCommandProperty, nameof(vm.DateChosen));
-            calendar.SetBinding(XamForms.Controls.Calendar.SelectedDateProperty, nameof(vm.Date));
-            //calendar.BindingContext = ViewModelProvider.GetViewModel<CalendarsViewModel>(vm => vm.Navigator = new Navigator(this)); ;
-            StackCalendars.Children.Add(calendar);
+                    //MaxDate=DateTime.Now.AddDays(30), 
+                    MinDate = DateTime.Now.AddDays(-1),
+                    MultiSelectDates = false,
+                    DisableAllDates = false,
+                    WeekdaysShow = true,
+                    ShowNumberOfWeek = true,
+                    ShowNumOfMonths = 1,
+                    EnableTitleMonthYearView = true,
+                    SelectedDate = DateTime.Now,
+                    WeekdaysTextColor = Color.Teal,
+                    StartDay = DayOfWeek.Monday,
+                    SelectedTextColor = Color.Fuchsia,
+                    //SpecialDates = new List<SpecialDate>{
+                    //    new SpecialDate(DateTime.Now.AddDays(2)) { BackgroundColor = Color.Green, TextColor = Color.Accent, BorderColor = Color.Lime, BorderWidth=8, Selectable = true },
+                    //    new SpecialDate(DateTime.Now.AddDays(3))
+                    //    {
+                    //        BackgroundColor = Color.Green,
+                    //        TextColor = Color.Blue,
+                    //        Selectable = true,
+                    //        BackgroundPattern = new BackgroundPattern(1)
+                    //        {
+                    //            Pattern = new List<Pattern>
+                    //            {
+                    //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Red},
+                    //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Purple},
+                    //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Green},
+                    //                new Pattern{ WidthPercent = 1f, HightPercent = 0.25f, Color = Color.Yellow}
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                };
 
+                FetchEvents();
+
+            
+
+                calendar.DateClicked += (sender, e) =>
+                    {
+                        if (calendar.SelectedDates.Count() == 0)
+                        {
+                            return;
+                        }
+                        vm.CalendarClick(calendar.SelectedDates, new Navigator(this));
+                    };
+                vm = GlobalInfo.DateTimeRangeViewModel;// new DateTimeRangeViewModel();//new CalendarsViewModel();//
+                calendar.SetBinding(XamForms.Controls.Calendar.DateCommandProperty, nameof(vm.DateChosen));
+                calendar.SetBinding(XamForms.Controls.Calendar.SelectedDateProperty, nameof(vm.Date));
+                //calendar.BindingContext = ViewModelProvider.GetViewModel<CalendarsViewModel>(vm => vm.Navigator = new Navigator(this)); ;
+                StackCalendars.Children.Add(calendar);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        private async void FetchEvents()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            IsBusy = true;
+
+            try
+            {
+                GlobalInfo.Events = await CrossCalendars.Current.GetEventsAsync(GlobalInfo.Calendar, DateTime.Now.AddMonths(-1), DateTime.Now.AddMonths(1));
+
+                if (GlobalInfo.Events.Count > 0)
+                {
+                    var listSpecialDate = new List<SpecialDate>();
+                    foreach (var item in GlobalInfo.Events)
+                    {
+                        listSpecialDate.Add(new SpecialDate(item.Start) { BackgroundColor = Color.Green, TextColor = Color.Accent, BorderColor = Color.Lime, BorderWidth = 8, Selectable = true });
+                    }
+                    calendar.SpecialDates = listSpecialDate;
+                };
+            }
+            catch (Exception ex)
+            {
+                //ReportError(ex);
+            }
+
+            IsBusy = false;
         }
     }
 }

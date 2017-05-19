@@ -202,6 +202,7 @@ namespace StudyCalender.Core.ViewModels
         {
             try
             {
+                GlobalInfo.Calendar = calendar;
                 await Navigator.PushAsync<DateTimeRangeViewModel>(vm => vm.Calendar = calendar);
             }
             catch (Exception ex)

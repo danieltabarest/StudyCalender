@@ -24,14 +24,9 @@ namespace StudyCalender
             DependencyService.Register<ViewProvider>();
 
             RegisterViews();
-
             var viewProvider = DependencyService.Get<ViewProvider>();
-
-
             //MainPage = new MainPage();
-
             MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<MainPageViewModel>()) as Page;
-
             //SetMainPage();
 
         }
@@ -61,7 +56,6 @@ namespace StudyCalender
         private void RegisterViews()
         {
             var viewProvider = DependencyService.Get<ViewProvider>();
-
             viewProvider.Register<MainPageViewModel, MainPage>();
             viewProvider.Register<CalendarsViewModel, CalendarsPage>();
             viewProvider.Register<CalendarEditorViewModel, CalendarEditorPage>();
