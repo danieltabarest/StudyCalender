@@ -1,6 +1,7 @@
 ﻿using StudyCalender.Views;
 using System;
 using Xamarin.Forms;
+using CommonView.Animate;
 
 namespace StudyCalender
 {
@@ -36,7 +37,7 @@ namespace StudyCalender
         {
             var item = e.SelectedItem as MasterPageItem;
 
-          
+
             if (item != null)
             {
                 if (item.Title == "Helps and feedback")
@@ -52,5 +53,8 @@ namespace StudyCalender
                 IsPresented = false;
             }
         }
+
+  
+
     }
 }

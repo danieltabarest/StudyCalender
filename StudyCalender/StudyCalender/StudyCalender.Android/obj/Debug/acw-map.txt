@@ -2,6 +2,10 @@ StudyCalender.Droid.MainActivity, StudyCalender.Android;md5ae6e115b824894bb48c2e
 StudyCalender.Droid.MainActivity, StudyCalender.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity
 StudyCalender.Droid.MainActivity;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity
 studycalender.droid.MainActivity;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity
+StudyCalender.Droid.SplashActivity, StudyCalender.Android;md5ae6e115b824894bb48c2e4c0397a9a2f.SplashActivity
+StudyCalender.Droid.SplashActivity, StudyCalender.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ae6e115b824894bb48c2e4c0397a9a2f.SplashActivity
+StudyCalender.Droid.SplashActivity;md5ae6e115b824894bb48c2e4c0397a9a2f.SplashActivity
+studycalender.droid.SplashActivity;md5ae6e115b824894bb48c2e4c0397a9a2f.SplashActivity
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks

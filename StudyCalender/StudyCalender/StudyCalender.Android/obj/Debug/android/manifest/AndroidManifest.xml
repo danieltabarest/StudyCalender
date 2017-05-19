@@ -14,7 +14,8 @@
     <!--<provider android:name="android.support.v4.content.FileProvider" android:authorities="com.plugin.mediatest.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>-->
-    <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/MyTheme" android:name="md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/iconcalender" android:label="@string/app_name" android:theme="@style/MyTheme" android:name="md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5ae6e115b824894bb48c2e4c0397a9a2f.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

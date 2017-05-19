@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Plugin.Calendars.Abstractions;
 using System.Collections.Generic;
 using System.Linq;
+using StudyCalender.Helpers;
 
 namespace StudyCalender.Core.ViewModels
 {
@@ -144,7 +145,7 @@ namespace StudyCalender.Core.ViewModels
                 ReportError(ex);
             }
         }
-        public async void CalendarClick(List<DateTime> SelectedDates, StudyCalender.Helpers.Navigator navigator)
+        public async void CalendarClick(List<DateTime> SelectedDates, Navigator navigator)
         {
             try
             {

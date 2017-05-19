@@ -14,7 +14,10 @@ namespace StudyCalender.Helpers
             where TViewModel : ViewModelBase
             where TView : VisualElement, new()
         {
-            _viewmodelsToViews.Add(typeof(TViewModel), typeof(TView));
+            if (!_viewmodelsToViews.ContainsKey(typeof(TViewModel)))
+            {
+                _viewmodelsToViews.Add(typeof(TViewModel), typeof(TView));
+            }
         }
 
         public VisualElement GetView<TViewModel>()

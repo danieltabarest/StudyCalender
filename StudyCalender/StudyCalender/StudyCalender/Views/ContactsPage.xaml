@@ -4,8 +4,11 @@
 			 x:Class="StudyCalender.ContactsPage"
 			 Title="Contacts Page">
 	<ContentPage.Content>
-		<StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="a01.png" x:Name="logoImage"></Image>
+        </StackLayout>
+		<!--<StackLayout>
 			<Label Text="Contacts data goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-		</StackLayout>
+		</StackLayout>-->
 	</ContentPage.Content>
 </ContentPage>

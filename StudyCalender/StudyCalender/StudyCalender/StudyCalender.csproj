@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Animation\Animate\Animate.cs" />
+    <Compile Include="Animation\CommonView.cs" />
+    <Compile Include="Animation\Custom\AnimationButton.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
