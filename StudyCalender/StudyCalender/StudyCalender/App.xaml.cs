@@ -4,17 +4,46 @@ using StudyCalender.Core.ViewModels;
 using StudyCalender.Helpers;
 using StudyCalender.Pages;
 using StudyCalender.Services;
+using StudyCalender.ViewModels;
 using StudyCalender.Views;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace StudyCalender
 {
     public partial class App : Application
     {
+        public static Action HideLoginView
+        {
+            get
+            {
+                return new Action(() => App.Current.MainPage = new LoginPage());
+            }
+        }
+
+        public static void NavigateToProfile(FacebookResponse profile)
+        {
+
+            try
+            {
+                var profileViewModel = new ProfileViewModel(profile);
+                var mainViewModel = MainPageViewModel.GetInstance();
+                mainViewModel.Profile = profileViewModel;
+                App.Current.MainPage = new ProfilePage();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
 
         public App()
         {
@@ -31,7 +60,7 @@ namespace StudyCalender
 
         }
 
-     
+
         public static void SetMainPage()
         {
             Current.MainPage = new TabbedPage
@@ -41,12 +70,12 @@ namespace StudyCalender
                     new NavigationPage(new ItemsPage())
                     {
                         Title = "Browse",
-                        Icon = Device.OnPlatform("tab_feed.png",null,null)
+                        Icon = Xamarin.Forms.Device.OnPlatform("tab_feed.png",null,null)
                     },
                     new NavigationPage(new AboutPage())
                     {
                         Title = "About",
-                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                        Icon = Xamarin.Forms.Device.OnPlatform("tab_about.png",null,null)
                     },
                 }
             };

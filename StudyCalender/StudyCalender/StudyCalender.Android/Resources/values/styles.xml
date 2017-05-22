@@ -28,6 +28,6 @@
   <style name="Theme.Splash" parent="android:Theme">
     <item name="android:windowBackground">@drawable/image1</item>
     <item name="android:windowNoTitle">true</item>
-    <item name="android:colorBackground">#3397DA</item>
+    <item name="android:colorBackground">#37474F</item>
   </style>
 </resources>

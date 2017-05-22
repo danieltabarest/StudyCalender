@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="StudyCalender.ContactsPage"
-			 Title="Contacts Page">
+			 Title="Home" BackgroundColor="#37474F">
 	<ContentPage.Content>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal"  BackgroundColor="#37474F" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <Image Source="a01.png" x:Name="logoImage"></Image>
         </StackLayout>
 		<!--<StackLayout>

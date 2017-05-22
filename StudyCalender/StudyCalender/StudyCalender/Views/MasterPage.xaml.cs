@@ -102,6 +102,14 @@ namespace StudyCalender
 
             });
 
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Login",
+                IconSource = "ic_help_black_24dp.png",
+                TargetType = typeof(LoginFacebookPage)
+
+            });
+
             listView.ItemsSource = masterPageItems;
         }
 

@@ -1,5 +1,6 @@
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.dll.config
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Acr.UserDialogs.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Acr.UserDialogs.Interface.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\CachedImageCircle.Forms.Plugin.Abstractions.dll
@@ -16,6 +17,8 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plu
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Messaging.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.Abstractions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.Abstractions.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Splat.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\System.Net.Http.Primitives.dll
@@ -50,6 +53,10 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plu
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.Abstractions.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Permissions.Abstractions.xml
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.pdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.xml
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.Abstractions.pdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Plugin.Share.Abstractions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\Xamarin.Forms.Core.pdb
@@ -82,6 +89,8 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\Stu
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Pages.EventEditorPage.xaml.g.cs
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Pages.EventsPage.xaml.g.cs
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Pages.ReminderEditorPage.xaml.g.cs
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Views.LoginFacebookPage.xaml.g.cs
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Views.ProfilePage.xaml.g.cs
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.Views.LoginPage.xaml.g.cs
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\obj\Debug\StudyCalender.pdb
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender\bin\Debug\StudyCalender.pdb

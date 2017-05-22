@@ -11,11 +11,22 @@ using Plugin.Calendars;
 using StudyCalender.Core.Enums;
 using StudyCalender.Core.Extensions;
 using Acr.UserDialogs;
+using StudyCalender.ViewModels;
 
 namespace StudyCalender.Core.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+
+        #region Properties
+
+        public ProfileViewModel Profile { get; set; }
+
+        #endregion
+
+
+
+
         #region Fields
 
         private ObservableCollection<Grouping<string, Calendar>> _groupedCalendars;
@@ -60,13 +71,25 @@ namespace StudyCalender.Core.ViewModels
             }
         }
 
-        public ICommand FetchCalendarsCommand { get { return _fetchCalendarsCommand ??
-                    (_fetchCalendarsCommand = new Command(
-                        FetchCalendars, () => !IsBusy)); } }
+        public ICommand FetchCalendarsCommand
+        {
+            get
+            {
+                return _fetchCalendarsCommand ??
+(_fetchCalendarsCommand = new Command(
+FetchCalendars, () => !IsBusy));
+            }
+        }
         public ICommand AddCalendarCommand { get { return new Command(AddCalendar); } }
         public ICommand EditCalendarCommand { get { return new Command<Calendar>(EditCalendar); } }
-        public ICommand DeleteCalendarCommand { get { return new Command<Calendar>(DeleteCalendar,
-            calendar => calendar?.CanEditCalendar ?? false); } }
+        public ICommand DeleteCalendarCommand
+        {
+            get
+            {
+                return new Command<Calendar>(DeleteCalendar,
+calendar => calendar?.CanEditCalendar ?? false);
+            }
+        }
         public ICommand GoToIDCommand => new Command(GoToID);
         public ICommand SelectCalendarCommand { get { return new Command<Calendar>(SelectCalendar); } }
 
@@ -76,7 +99,7 @@ namespace StudyCalender.Core.ViewModels
         {
             try
             {
-
+                instance = this;
                 FetchCalendars();
             }
             catch (Exception ex)
@@ -84,8 +107,34 @@ namespace StudyCalender.Core.ViewModels
 
                 throw;
             }
-            
+
         }
+        #region Singleton
+
+        private static MainPageViewModel instance;
+
+        public static MainPageViewModel GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new MainPageViewModel();
+            }
+
+            return instance;
+        }
+
+        #endregion
+        //#region Commands
+
+        ////public ICommand LoginCommand { get { return new RelayCommand(Login); } }
+
+        ////private async void Login()
+        ////{
+        ////    await App.Current.MainPage.Navigation.PushAsync(new LoginPage());
+        ////}
+
+        //#endregion
+
 
         private async void FetchCalendars()
         {
@@ -113,7 +162,7 @@ namespace StudyCalender.Core.ViewModels
             IsBusy = false;
         }
 
-  
+
 
 
 
@@ -231,6 +280,6 @@ namespace StudyCalender.Core.ViewModels
         }
 
 
-      
+
     }
 }

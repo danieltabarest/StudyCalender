@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="StudyCalender.MasterPage"
-			 
 			 Icon="hamburger.png"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 			 Title="Calender">
@@ -32,10 +31,24 @@
 
             </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                <!--<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" BackgroundColor="#FFFFFF" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" AbsoluteLayout.LayoutBounds="250.25, 0.25, 50, 50 "  Height="10" TextColor="#9E9E9E" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
                 <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" BackgroundColor="#FFFFFF" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}"  Height="10" TextColor="#9E9E9E" />
+                            <ViewCell >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="10,0,10,0"  >
+                                    <Image Source="{Binding IconSource}" HorizontalOptions="End" AbsoluteLayout.LayoutBounds="250.25, 0.25, 50, 50 "/>
+                                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                        <Label Text = "{Binding Title}" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
