@@ -19,6 +19,7 @@ namespace StudyCalender
 {
     public partial class App : Application
     {
+        static TodoItemDatabase database;
         public static Action HideLoginView
         {
             get
@@ -59,6 +60,19 @@ namespace StudyCalender
             //SetMainPage();
 
         }
+        public static TodoItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
+        public int ResumeAtTodoId { get; set; }
 
 
         public static void SetMainPage()

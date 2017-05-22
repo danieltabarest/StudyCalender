@@ -33,6 +33,8 @@ namespace StudyCalender
             }
         }
 
+
+
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as MasterPageItem;
@@ -54,7 +56,15 @@ namespace StudyCalender
             }
         }
 
-  
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            //listView.ItemsSource = await App.Database.GetItemsAsync();
+        }
+
 
     }
 }
