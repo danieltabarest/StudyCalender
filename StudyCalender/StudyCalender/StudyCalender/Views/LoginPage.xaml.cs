@@ -9,7 +9,7 @@ namespace StudyCalender.Views
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = MainPageViewModel.GetInstance();
+            //BindingContext = MainPageViewModel.GetInstance();
         }
     }
 }

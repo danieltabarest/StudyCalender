@@ -4,9 +4,9 @@
              x:Class="StudyCalender.Views.LoginPage"
              xmlns:vm="clr-namespace:StudyCalender.ViewModels;"
              Title="{Binding Title}">
-  <!--<ContentPage.BindingContext>
+  <ContentPage.BindingContext>
     <vm:AboutViewModel />
-  </ContentPage.BindingContext>-->
+  </ContentPage.BindingContext>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
