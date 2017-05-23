@@ -12,7 +12,6 @@ namespace StudyCalender
             InitializeComponent();
 
             masterPage.ListView.ItemSelected += OnItemSelected;
-
             masterPage.TapSettingsGestureRecognizer.Tapped += (s, e) =>
             {
                 try
@@ -62,9 +61,11 @@ namespace StudyCalender
 
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtTodoId = -1;
+            var bd = await App.Database.GetItemsAsync();
             //listView.ItemsSource = await App.Database.GetItemsAsync();
         }
 
 
+       
     }
 }

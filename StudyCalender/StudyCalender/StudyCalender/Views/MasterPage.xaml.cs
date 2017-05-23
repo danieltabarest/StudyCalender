@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System;
 using StudyCalender.Pages;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace StudyCalender
 {
@@ -46,9 +48,12 @@ namespace StudyCalender
                     if (file == null)
                         return;
 
+                    var stream = file.GetStream();
+                    DependencyService.Get<IFileHelper>().SaveFile("TodoSQLite.db3", ReadFully(stream));
+
                     image.Source = ImageSource.FromStream(() =>
                     {
-                        var stream = file.GetStream();
+                        stream = file.GetStream();
                         file.Dispose();
                         return stream;
                     });
@@ -61,9 +66,8 @@ namespace StudyCalender
             };
             image.GestureRecognizers.Add(tapGestureRecognizer);
 
-
             masterPageItems = new List<MasterPageItem>();
-           
+
 
             masterPageItems.Add(new MasterPageItem
             {
@@ -113,8 +117,19 @@ namespace StudyCalender
             listView.ItemsSource = masterPageItems;
         }
 
-
-
+        public static byte[] ReadFully(Stream input)
+        {
+            byte[] buffer = new byte[16 * 1024];
+            using (MemoryStream ms = new MemoryStream())
+            {
+                int read;
+                while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+                return ms.ToArray();
+            }
+        }
         private async void PhotoCommandExecute(object obj)
         {
             this.IsBusy = true;
@@ -143,5 +158,25 @@ namespace StudyCalender
             this.IsBusy = false;
         }
 
+
+        public string GetImage(/*int Id*/)
+        {
+            string fileName = DependencyService.Get<IFileHelper>()
+                .GetPictureFromDisk(/*Id*/);
+            return fileName;
+        }
+
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            //image.Source = ImageSource.fr(() =>
+            //{
+            //    stream = file.GetStream();
+            //    file.Dispose();
+            //    return stream;
+            //});
+            image.Source = ImageSource.FromFile(GetImage() +".jpg");
+        }
     }
 }

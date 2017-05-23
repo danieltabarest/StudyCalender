@@ -29,6 +29,12 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Share.Abstractions.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Share.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Splat.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLite-net.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Xamarin.Android.Support.CustomTabs.dll
@@ -111,6 +117,8 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Share.Abstractions.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Plugin.Share.Abstractions.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Splat.dll.mdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLite-net.xml
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\SQLite-net.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Xamarin.Auth.Android.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Xamarin.Forms.Core.xml
@@ -212,6 +220,7 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Share.Abstractions.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Plugin.Share.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Splat.dll.mdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\SQLite-net.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\StudyCalender.Android.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\StudyCalender.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb

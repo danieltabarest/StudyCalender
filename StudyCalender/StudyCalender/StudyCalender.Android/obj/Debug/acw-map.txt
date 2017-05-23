@@ -1,3 +1,7 @@
+StudyCalender.TextToSpeech_Android, StudyCalender.Android;md59552e18975ca0ab590311e7f820633b9.TextToSpeech_Android
+StudyCalender.TextToSpeech_Android, StudyCalender.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59552e18975ca0ab590311e7f820633b9.TextToSpeech_Android
+StudyCalender.TextToSpeech_Android;md59552e18975ca0ab590311e7f820633b9.TextToSpeech_Android
+studycalender.TextToSpeech_Android;md59552e18975ca0ab590311e7f820633b9.TextToSpeech_Android
 StudyCalender.Droid.MainActivity, StudyCalender.Android;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity
 StudyCalender.Droid.MainActivity, StudyCalender.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity
 StudyCalender.Droid.MainActivity;md5ae6e115b824894bb48c2e4c0397a9a2f.MainActivity

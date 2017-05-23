@@ -40,6 +40,7 @@ namespace StudyCalender
 			}
 		}
 
+
 		public Task<int> DeleteItemAsync(TodoItem item)
 		{
 			return database.DeleteAsync(item);
