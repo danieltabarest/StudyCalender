@@ -1,4 +1,6 @@
-﻿namespace StudyCalender
+﻿using Xamarin.Forms;
+
+namespace StudyCalender
 {
 	public interface IFileHelper
 	{
@@ -18,5 +20,10 @@
         void DeleteDirectory();
 
         string GetPictureFromDisk(/*int id*/);
+
+        void SavePictureToDisk(ImageSource imgSrc, string imagename);
+
+
+        string GetPictureFromDisk(string imagename);
     }
 }

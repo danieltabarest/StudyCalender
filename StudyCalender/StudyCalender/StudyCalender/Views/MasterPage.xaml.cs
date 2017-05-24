@@ -48,15 +48,26 @@ namespace StudyCalender
                     if (file == null)
                         return;
 
-                    var stream = file.GetStream();
-                    DependencyService.Get<IFileHelper>().SaveFile("TodoSQLite.db3", ReadFully(stream));
+                    //var stream = file.GetStream();
+                    //DependencyService.Get<IFileHelper>().SaveFile("TodoSQLite.db3", ReadFully(stream));
 
                     image.Source = ImageSource.FromStream(() =>
                     {
-                        stream = file.GetStream();
-                        file.Dispose();
+                        var stream = file.GetStream();
                         return stream;
                     });
+
+                    DependencyService.Get<IFileHelper>().SavePictureToDisk(image.Source, "profile");
+
+                    //image.Source = ImageSource.FromStream(() => new MemoryStream(ReadFully(stream)));
+                    //file.Dispose();
+
+                    await DisplayAlert("Image Save",
+                                      "The image has been saved",
+                                      "OK");
+
+                    file.Dispose();
+
                 }
                 catch (Exception ex)
                 {
@@ -170,13 +181,15 @@ namespace StudyCalender
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            //image.Source = ImageSource.fr(() =>
+            //FileImageSource.FromStream()
+            //image.Source = ImageSource.FromStream(() =>
             //{
-            //    stream = file.GetStream();
+            //    var stream = System.IO.File.Open(jpgFilename, FileMode.Open);
             //    file.Dispose();
             //    return stream;
             //});
-            image.Source = ImageSource.FromFile(GetImage() +".jpg");
+            string fileName = DependencyService.Get<IFileHelper>().GetPictureFromDisk("profile");
+            image.Source = ImageSource.FromFile(fileName);
         }
     }
 }
