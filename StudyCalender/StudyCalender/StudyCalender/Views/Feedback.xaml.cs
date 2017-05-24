@@ -37,5 +37,11 @@ namespace StudyCalender.Views
         {
             CrossMessaging.Current.EmailMessenger.SendSampleEmail(true);
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            
+        }
     }
 }

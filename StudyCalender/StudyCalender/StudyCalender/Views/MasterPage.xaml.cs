@@ -27,7 +27,69 @@ namespace StudyCalender
 
             tapSettingsGestureRecognizer = new TapGestureRecognizer();
             Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
+            ImagenCommand();
 
+            masterPageItems = new List<MasterPageItem>();
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Overview",
+                IconSource = "ic_home_black_24dp.png",
+                TargetType = typeof(Overview)
+            });
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Agenda",
+                IconSource = "ic_assignment_black_24dp.png",
+                TargetType = typeof(Agenda)
+            });
+
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Calender",
+                IconSource = "ic_format_list_numbered_black_24dp.png",
+                TargetType = typeof(CalendarsPage)
+            });
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Remove ads",
+                IconSource = "ic_card_membership_black_24dp.png",
+                TargetType = typeof(ReminderPage)
+            });
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Helps and feedback",
+                IconSource = "ic_help_black_24dp.png",
+                TargetType = typeof(Feedback)
+
+            });
+
+            Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Login",
+                IconSource = "ic_help_black_24dp.png",
+                TargetType = typeof(LoginFacebookPage)
+            });
+
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Logout",
+                IconSource = "ic_help_black_24dp.png",
+                TargetType = typeof(Feedback)
+
+            });
+
+            listView.ItemsSource = masterPageItems;
+        }
+
+        private void ImagenCommand()
+        {
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += async (s, e) =>
             {
@@ -76,56 +138,6 @@ namespace StudyCalender
                 }
             };
             image.GestureRecognizers.Add(tapGestureRecognizer);
-
-            masterPageItems = new List<MasterPageItem>();
-
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Overview",
-                IconSource = "ic_home_black_24dp.png",
-                TargetType = typeof(Overview)
-            });
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Agenda",
-                IconSource = "ic_assignment_black_24dp.png",
-                TargetType = typeof(Agenda)
-            });
-
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Calender",
-                IconSource = "ic_format_list_numbered_black_24dp.png",
-                TargetType = typeof(CalendarsPage)
-            });
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Remove ads",
-                IconSource = "ic_card_membership_black_24dp.png",
-                TargetType = typeof(ReminderPage)
-            });
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Helps and feedback",
-                IconSource = "ic_help_black_24dp.png",
-                TargetType = typeof(Feedback)
-
-            });
-
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Login",
-                IconSource = "ic_help_black_24dp.png",
-                TargetType = typeof(LoginFacebookPage)
-
-            });
-
-            listView.ItemsSource = masterPageItems;
         }
 
         public static byte[] ReadFully(Stream input)
@@ -169,7 +181,6 @@ namespace StudyCalender
             this.IsBusy = false;
         }
 
-
         public string GetImage(/*int Id*/)
         {
             string fileName = DependencyService.Get<IFileHelper>()
@@ -177,17 +188,9 @@ namespace StudyCalender
             return fileName;
         }
 
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            //FileImageSource.FromStream()
-            //image.Source = ImageSource.FromStream(() =>
-            //{
-            //    var stream = System.IO.File.Open(jpgFilename, FileMode.Open);
-            //    file.Dispose();
-            //    return stream;
-            //});
             string fileName = DependencyService.Get<IFileHelper>().GetPictureFromDisk("profile");
             image.Source = ImageSource.FromFile(fileName);
         }

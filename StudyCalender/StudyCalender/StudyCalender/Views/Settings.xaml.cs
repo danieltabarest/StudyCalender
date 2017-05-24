@@ -1,5 +1,6 @@
 ﻿
 using StudyCalender.ViewModels;
+using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
@@ -7,7 +8,7 @@ namespace StudyCalender.Views
 {
     public partial class Settings : ContentPage
     {
-        public ObservableCollection<ModelSettings> modelSettings { get; set; }
+        public ObservableCollection<MasterPageItem> modelSettings { get; set; }
         private SettingsViewModel ViewModel
         {
             get { return BindingContext as SettingsViewModel; }
@@ -19,18 +20,22 @@ namespace StudyCalender.Views
         {
             InitializeComponent();
 
-            modelSettings = new ObservableCollection<ModelSettings>();
-            modelSettings.Add(new ModelSettings { Name = "General", Type = "Fruit", Image = "ic_help_black_24dp.png" });
-            modelSettings.Add(new ModelSettings { Name = "Accounts", Type = "Vegetable", Image = "ic_help_black_24dp.png" });
-            modelSettings.Add(new ModelSettings { Name = "Contact us", Type = "Vegetable", Image = "ic_help_black_24dp.png" });
-            modelSettings.Add(new ModelSettings { Name = "Remove ads", Type = "Vegetable", Image = "ic_card_membership_black_24dp.png" });
+            modelSettings = new ObservableCollection<MasterPageItem>();
+            //modelSettings.Add(new MasterPageItem { Title = "General", TargetType = typeof(AboutPage), IconSource = "ic_help_black_24dp.png" });
+            modelSettings.Add(new MasterPageItem { Title = "Accounts", TargetType = typeof(Accounts), IconSource = "ic_help_black_24dp.png" });
+            modelSettings.Add(new MasterPageItem { Title = "Contact us", TargetType = typeof(Feedback), IconSource = "ic_help_black_24dp.png" });
+            modelSettings.Add(new MasterPageItem { Title = "Remove ads", TargetType = typeof(AboutPage), IconSource = "ic_card_membership_black_24dp.png" });
+            modelSettings.Add(new MasterPageItem { Title = "About", TargetType = typeof(AboutPage), IconSource = "ic_card_membership_black_24dp.png" });
             lstView.ItemsSource = modelSettings;
 
             lstView.ItemTapped += (sender, args) =>
             {
                 if (lstView.SelectedItem == null)
                     return;
-                this.Navigation.PushAsync(new SettingsDetailsView(lstView.SelectedItem as ModelSettings));
+
+                var item = lstView.SelectedItem as MasterPageItem;
+                this.Navigation.PushAsync((Page)Activator.CreateInstance(item.TargetType));
+                /*this.Navigation.PushAsync(new SettingsDetailsView(lstView.SelectedItem as ModelSettings));*/
                 lstView.SelectedItem = null;
             };
 

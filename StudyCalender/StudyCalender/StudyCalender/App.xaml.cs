@@ -20,6 +20,7 @@ namespace StudyCalender
     public partial class App : Application
     {
         static TodoItemDatabase database;
+        static ViewProvider viewProvider;
         public static Action HideLoginView
         {
             get
@@ -28,7 +29,7 @@ namespace StudyCalender
             }
         }
 
-        public static void NavigateToProfile(FacebookResponse profile)
+        public  void NavigateToProfile(FacebookResponse profile)
         {
 
             try
@@ -36,7 +37,10 @@ namespace StudyCalender
                 var profileViewModel = new ProfileViewModel(profile);
                 var mainViewModel = MainPageViewModel.GetInstance();
                 mainViewModel.Profile = profileViewModel;
-                App.Current.MainPage = new ProfilePage();
+                //App.Current.MainPage = new ProfilePage();
+                //App.Current.MainPage.
+                //Navigation.PushAsync((Page)Activator.CreateInstance(item.TargetType));
+                
 
             }
             catch (Exception ex)
@@ -54,7 +58,7 @@ namespace StudyCalender
             DependencyService.Register<ViewProvider>();
 
             RegisterViews();
-            var viewProvider = DependencyService.Get<ViewProvider>();
+             viewProvider = DependencyService.Get<ViewProvider>();
             //MainPage = new MainPage();
             MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<MainPageViewModel>()) as Page;
             //SetMainPage();
@@ -73,7 +77,7 @@ namespace StudyCalender
         }
 
         public int ResumeAtTodoId { get; set; }
-
+        public static bool IsLoggedIn { get; internal set; }
 
         public static void SetMainPage()
         {
@@ -106,6 +110,7 @@ namespace StudyCalender
             viewProvider.Register<EventsViewModel, EventsPage>();
             viewProvider.Register<EventEditorViewModel, EventEditorPage>();
             viewProvider.Register<ReminderEditorViewModel, ReminderEditorPage>();
+            viewProvider.Register<ProfileViewModel, ProfilePage>();
         }
         #region Lifecycle stuff
 

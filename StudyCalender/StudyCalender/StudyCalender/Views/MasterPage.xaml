@@ -10,7 +10,7 @@
             <StackLayout Orientation="Vertical" VerticalOptions="Fill" BackgroundColor="#37474F" Spacing="10" Padding="0,40,15,15">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="5">
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="0">
-                        <controls:CircleImage x:Name="image"  FillColor="Red" Source="contacts.png" BorderThickness="4" BorderColor="Red" WidthRequest="90" HeightRequest="60" Aspect="AspectFit"
+                        <controls:CircleImage x:Name="image"  FillColor="Transparent" Source="contacts.png" BorderThickness="4" BorderColor="Red" WidthRequest="90" HeightRequest="60" Aspect="AspectFit"
 						HorizontalOptions="Center" >
                             <controls:CircleImage.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding PhotoCommand}"/>
@@ -18,10 +18,10 @@
                         </controls:CircleImage>
                     </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="0">
-                        <Label x:Name="MasterPage_txtTermName" TextColor="#FFFFFF" FontSize="22" WidthRequest="240" Text="NAME"/>
-                        <Label x:Name="MasterPage_txtSemester" TextColor="#FFFFFF" FontSize="12" WidthRequest="240" Text="SEMESTER"/>
+                        <Label x:Name="MasterPage_txtTermName" TextColor="#FFFFFF" FontSize="22" WidthRequest="240" Text="DD"/>
+                        <Label x:Name="MasterPage_txtSemester" TextColor="#FFFFFF" FontSize="12" WidthRequest="240" Text="Offline"/>
                     </StackLayout>
-                    <controls:CircleImage x:Name="Settings" Source="ic_settings_white_24dp.png"  WidthRequest="50" HeightRequest="50" Aspect="AspectFit"
+                    <controls:CircleImage x:Name="Settings" Source="ic_settings_white_24dp.png"  WidthRequest="30" HeightRequest="30" Aspect="AspectFit"
 						HorizontalOptions="Center" >
                         <controls:CircleImage.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding SettingsCommand}"/>

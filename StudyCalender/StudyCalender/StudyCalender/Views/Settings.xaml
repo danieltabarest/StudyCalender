@@ -13,10 +13,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="10,0,10,0" >
-                            <Image Source="{Binding Image}" HorizontalOptions="End" AbsoluteLayout.LayoutBounds="250.25, 0.25, 50, 50 "/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="10,0,10,0"  >
+                            <Image Source="{Binding IconSource}" HorizontalOptions="End" AbsoluteLayout.LayoutBounds="250.25, 0.25, 50, 50 " />
                             <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                                <Label Text = "{Binding Name}" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40"/>
+                                <Label Text = "{Binding Title}" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40" />
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

@@ -1,7 +1,5 @@
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\StudyCalender.Android.pdb
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.companyname.StudyCalender.apk
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.companyname.StudyCalender-Signed.apk
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Acr.Support.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Acr.UserDialogs.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\Acr.UserDialogs.Interface.dll
@@ -131,7 +129,6 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.dll
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\StudyCalender.Android.pdb
-C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\bin\com.companyname.StudyCalender.apk
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\layout\splashlayout.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\drawable\layout1.xml
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\res\layout\tabbar.xml
@@ -226,3 +223,6 @@ C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\D
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.dttapp.StudyCalender.apk
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\bin\Debug\com.dttapp.StudyCalender-Signed.apk
+C:\Users\Admin\Source\SC\StudyCalender\StudyCalender\StudyCalender.Android\obj\Debug\android\bin\com.dttapp.StudyCalender.apk

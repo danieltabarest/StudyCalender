@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace StudyCalender.ViewModels
 {
-    public class ProfileViewModel
+    public class ProfileViewModel : ModalViewModelBase
     {
         public string UserName { get; set; }
 

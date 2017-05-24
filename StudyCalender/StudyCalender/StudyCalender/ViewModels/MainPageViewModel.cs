@@ -12,17 +12,40 @@ using StudyCalender.Core.Enums;
 using StudyCalender.Core.Extensions;
 using Acr.UserDialogs;
 using StudyCalender.ViewModels;
+using System.ComponentModel;
+using StudyCalender.Models;
 
 namespace StudyCalender.Core.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+        #region Attributes
+        private User currentUser;
+        #endregion
 
         #region Properties
 
         public ProfileViewModel Profile { get; set; }
+        public User CurrentUser
+        {
+            set
+            {
+                if (currentUser != value)
+                {
+                    currentUser = value;
+                    //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentUser"));
+                }
+            }
+            get
+            {
+                return currentUser;
+            }
+        }
+
 
         #endregion
+
+
 
 
 
@@ -109,6 +132,12 @@ calendar => calendar?.CanEditCalendar ?? false);
             }
 
         }
+
+        public void SetCurrentUser(User user)
+        {
+            CurrentUser = user;
+        }
+
         #region Singleton
 
         private static MainPageViewModel instance;

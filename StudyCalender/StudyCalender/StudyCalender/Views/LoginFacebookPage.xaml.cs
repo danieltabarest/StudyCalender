@@ -11,5 +11,11 @@ namespace StudyCalender.Views
             InitializeComponent();
             //BindingContext = MainPageViewModel.GetInstance();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+         //   SendEmail();
+        }
     }
 }

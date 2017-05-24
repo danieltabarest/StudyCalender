@@ -18,12 +18,19 @@ namespace StudyCalender.Droid
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
-        { 
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.splashLayout);
-              
-            StartActivity(typeof(MainActivity));
-           
+        {
+            try
+            {
+                base.OnCreate(savedInstanceState);
+                SetContentView(Resource.Layout.splashLayout);
+                StartActivity(typeof(MainActivity));
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
         }
         
     }

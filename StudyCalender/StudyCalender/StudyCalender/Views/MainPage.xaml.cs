@@ -2,6 +2,8 @@
 using System;
 using Xamarin.Forms;
 using CommonView.Animate;
+using Plugin.Messaging;
+using StudyCalender.Helpers;
 
 namespace StudyCalender
 {
@@ -43,8 +45,7 @@ namespace StudyCalender
             {
                 if (item.Title == "Helps and feedback")
                 {
-                    App.Current.MainPage = new NavigationPage(new Feedback());
-                    masterPage.ListView.SelectedItem = null;
+                    SendEmail();
                     IsPresented = false;
                     return;
                 }
@@ -65,7 +66,9 @@ namespace StudyCalender
             //listView.ItemsSource = await App.Database.GetItemsAsync();
         }
 
-
-       
+        private void SendEmail()
+        {
+            CrossMessaging.Current.EmailMessenger.SendSampleEmail(false);
+        }
     }
 }
