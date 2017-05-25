@@ -1,5 +1,5 @@
-﻿
-using StudyCalender.Core.ViewModels;
+﻿using StudyCalender.Core.ViewModels;
+using StudyCalender.ViewModels;
 using Xamarin.Forms;
 
 namespace StudyCalender.Views
@@ -8,8 +8,17 @@ namespace StudyCalender.Views
     {
         public LoginPage()
         {
-            InitializeComponent();
-            //BindingContext = MainPageViewModel.GetInstance();
+            try
+            {
+                InitializeComponent();
+                BindingContext = new LoginViewModel();
+            }
+            catch (System.Exception ex)
+            {
+
+                throw;
+            }
+
         }
     }
 }

@@ -70,12 +70,12 @@ namespace StudyCalender
 
             Settings.GestureRecognizers.Add(tapSettingsGestureRecognizer);
 
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Login",
-                IconSource = "ic_help_black_24dp.png",
-                TargetType = typeof(LoginFacebookPage)
-            });
+            //masterPageItems.Add(new MasterPageItem
+            //{
+            //    Title = "Login",
+            //    IconSource = "ic_help_black_24dp.png",
+            //    TargetType = typeof(LoginFacebookPage)
+            //});
 
             masterPageItems.Add(new MasterPageItem
             {

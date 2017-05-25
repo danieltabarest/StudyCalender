@@ -24,7 +24,7 @@ namespace StudyCalender.Core.ViewModels
         #endregion
 
         #region Properties
-
+        public LoginViewModel Login { get; set; }
         public ProfileViewModel Profile { get; set; }
         public User CurrentUser
         {
@@ -123,6 +123,7 @@ calendar => calendar?.CanEditCalendar ?? false);
             try
             {
                 instance = this;
+                Login = new LoginViewModel();
                 FetchCalendars();
             }
             catch (Exception ex)

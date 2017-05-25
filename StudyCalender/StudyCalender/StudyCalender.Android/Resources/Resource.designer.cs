@@ -64,6 +64,8 @@ namespace StudyCalender.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::StudyCalender.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::StudyCalender.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::Splat.Resource.String.library_name = global::StudyCalender.Droid.Resource.String.library_name;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::StudyCalender.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::StudyCalender.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::StudyCalender.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3221,6 +3223,12 @@ namespace StudyCalender.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f090027
+			public const int ApplicationName = 2131296295;
+			
+			// aapt resource value: 0x7f090026
+			public const int Hello = 2131296294;
+			
 			// aapt resource value: 0x7f09000f
 			public const int abc_action_bar_home_description = 2131296271;
 			
@@ -3278,8 +3286,8 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f090021
 			public const int abc_toolbar_collapse_description = 2131296289;
 			
-			// aapt resource value: 0x7f09002a
-			public const int app_name = 2131296298;
+			// aapt resource value: 0x7f09002c
+			public const int app_name = 2131296300;
 			
 			// aapt resource value: 0x7f090023
 			public const int appbar_scrolling_view_behavior = 2131296291;
@@ -3290,17 +3298,17 @@ namespace StudyCalender.Droid
 			// aapt resource value: 0x7f090025
 			public const int character_counter_pattern = 2131296293;
 			
+			// aapt resource value: 0x7f09002b
+			public const int day_name_format = 2131296299;
+			
 			// aapt resource value: 0x7f090029
-			public const int day_name_format = 2131296297;
-			
-			// aapt resource value: 0x7f090027
-			public const int invalid_date = 2131296295;
-			
-			// aapt resource value: 0x7f090026
-			public const int library_name = 2131296294;
+			public const int invalid_date = 2131296297;
 			
 			// aapt resource value: 0x7f090028
-			public const int month_name_format = 2131296296;
+			public const int library_name = 2131296296;
+			
+			// aapt resource value: 0x7f09002a
+			public const int month_name_format = 2131296298;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;

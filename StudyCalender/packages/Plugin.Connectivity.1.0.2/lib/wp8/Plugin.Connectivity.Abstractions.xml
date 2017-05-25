@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Connectivity.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Connectivity.Abstractions.IConnectivity">
+            <summary>
+            Interface for Connectivity
+            </summary>
+        </member>
+    </members>
+</doc>

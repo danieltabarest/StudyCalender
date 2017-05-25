@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Connectivity</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Connectivity.CrossConnectivity">
+            <summary>
+            Cross platform Connectivity implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Connectivity.CrossConnectivity.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.Connectivity.ConnectivityImplementation">
+            <summary>
+            Implementation for Feature
+            </summary>
+        </member>
+    </members>
+</doc>

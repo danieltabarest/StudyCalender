@@ -8,6 +8,8 @@ using GalaSoft.MvvmLight.Command;
 using Plugin.Connectivity;
 using StudyCalender.Core.ViewModels;
 using StudyCalender.Models;
+using StudyCalender.Core.Helpers;
+using StudyCalender.Views;
 
 namespace StudyCalender.ViewModels
 {
@@ -18,7 +20,7 @@ namespace StudyCalender.ViewModels
 
         private DialogService dialogService;
 
-        //private DataService dataService;
+        private DataService dataService;
 
         private NavigationService navigationService;
 
@@ -124,7 +126,7 @@ namespace StudyCalender.ViewModels
         {
             apiService = new ApiService();
             dialogService = new DialogService();
-            //dataService = new DataService();
+            dataService = new DataService();
             navigationService = new NavigationService();
 
             IsRemembered = true;
@@ -137,90 +139,111 @@ namespace StudyCalender.ViewModels
         #region Commands
         public ICommand LoginCommand { get { return new RelayCommand(Login); } }
 
+        public ICommand LoginFacebookCommand { get { return new RelayCommand(LoginFacebook); } }
+
+
+        private void LoginFacebook()
+        {
+            try
+            {
+                //this.Navigation.PushAsync((Page)Activator.CreateInstance(item.TargetType));
+                App.Current.MainPage = new LoginFacebookPage();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
         private async void Login()
         {
-            if (string.IsNullOrEmpty(Email))
+            try
             {
-                await dialogService.ShowMessage("Error", "You must enter the user email.");
-                return;
-            }
+                if (string.IsNullOrEmpty(Email))
+                {
+                    await dialogService.ShowMessage("Error", "You must enter the user email.");
+                    return;
+                }
 
-            if (string.IsNullOrEmpty(Password))
-            {
-                await dialogService.ShowMessage("Error", "You must enter a password.");
-                return;
-            }
+                if (string.IsNullOrEmpty(Password))
+                {
+                    await dialogService.ShowMessage("Error", "You must enter a password.");
+                    return;
+                }
 
-            IsRunning = true;
-            IsEnabled = false;
+                IsRunning = true;
+                IsEnabled = false;
 
-            if (!CrossConnectivity.Current.IsConnected)
-            {
-                IsRunning = false;
-                IsEnabled = true;
-                await dialogService.ShowMessage("Error", "Check you internet connection.");
-                return;
-            }
+                if (!CrossConnectivity.Current.IsConnected)
+                {
+                    IsRunning = false;
+                    IsEnabled = true;
+                    await dialogService.ShowMessage("Error", "Check you internet connection.");
+                    return;
+                }
 
-            var isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com");
-            if (!isReachable)
-            {
-                IsRunning = false;
-                IsEnabled = true;
-                await dialogService.ShowMessage("Error", "Check you internet connection.");
-                return;
-            }
+                var isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com");
+                if (!isReachable)
+                {
+                    IsRunning = false;
+                    IsEnabled = true;
+                    await dialogService.ShowMessage("Error", "Check you internet connection.");
+                    return;
+                }
 
-            //var parameters = dataService.First<Parameter>(false);
-            //var token = await apiService.GetToken(parameters.URLBase, Email, Password);
-            string token = null;
-            if (token == null)
-            {
-                IsRunning = false;
-                IsEnabled = true;
-                await dialogService.ShowMessage("Error", "The user name or password in incorrect.");
+                var parameters = dataService.First<Parameter>(false);
+                var token = await apiService.GetToken(parameters.URLBase, Email, Password);
+
+                if (token == null)
+                {
+                    IsRunning = false;
+                    IsEnabled = true;
+                    await dialogService.ShowMessage("Error", "The user name or password in incorrect.");
+                    Password = null;
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(token.AccessToken))
+                {
+                    IsRunning = false;
+                    IsEnabled = true;
+                    await dialogService.ShowMessage("Error", token.ErrorDescription);
+                    Password = null;
+                    return;
+                }
+
+                var response = await apiService.GetUserByEmail(parameters.URLBase, "/api", "/Users/GetUserByEmail", token.TokenType, token.AccessToken, token.UserName);
+
+                if (!response.IsSuccess)
+                {
+                    IsRunning = false;
+                    IsEnabled = true;
+                    await dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter.");
+                    return;
+                }
+
+                var user = (User)response.Result;
+                user.AccessToken = token.AccessToken;
+                user.TokenType = token.TokenType;
+                user.TokenExpires = token.Expires;
+                user.IsRemembered = IsRemembered;
+                user.Password = Password;
+                dataService.DeleteAllAndInsert(user);
+
+                var mainViewModel = MainPageViewModel.GetInstance();
+                mainViewModel.SetCurrentUser(new User());//user);
+
+                Email = null;
                 Password = null;
-                return;
-            }
-
-            /*if (string.IsNullOrEmpty(token.AccessToken))
-            {
                 IsRunning = false;
                 IsEnabled = true;
-                await dialogService.ShowMessage("Error", token.ErrorDescription);
-                Password = null;
-                return;
+                navigationService.SetMainPage("MasterPage");
             }
-
-            var response = await apiService.GetUserByEmail(parameters.URLBase, "/api", "/Users/GetUserByEmail", token.TokenType, token.AccessToken, token.UserName);
-
-            if (!response.IsSuccess)
+            catch (Exception ex)
             {
-                IsRunning = false;
-                IsEnabled = true;
-                await dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter.");
-                return;
+                await dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter." + ex.Message);
             }
-          
-            var user = (User)response.Result;
-            user.AccessToken = token.AccessToken;
-            user.TokenType = token.TokenType;
-            user.TokenExpires = token.Expires;
-            user.IsRemembered = IsRemembered;
-            user.Password = Password;
-            dataService.DeleteAllAndInsert(user);
-            dataService.InsertOrUpdate(user.FavoriteTeam);
-            dataService.InsertOrUpdate(user.UserType);
-            */
-            var mainViewModel = MainPageViewModel.GetInstance();
-            mainViewModel.SetCurrentUser(new User());//user);
-
-            Email = null;
-            Password = null;
-
-            IsRunning = false;
-            IsEnabled = true;
-            navigationService.SetMainPage("MasterPage");
         }
         #endregion
 

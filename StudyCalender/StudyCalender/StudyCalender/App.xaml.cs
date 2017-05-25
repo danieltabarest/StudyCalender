@@ -2,6 +2,7 @@
 using StudyCalender.Core.Services;
 using StudyCalender.Core.ViewModels;
 using StudyCalender.Helpers;
+using StudyCalender.Models;
 using StudyCalender.Pages;
 using StudyCalender.Services;
 using StudyCalender.ViewModels;
@@ -21,6 +22,14 @@ namespace StudyCalender
     {
         static TodoItemDatabase database;
         static ViewProvider viewProvider;
+
+        #region Attributes
+        private DataService dataService;
+        private DialogService dialogService;
+        private ApiService apiService;
+        private NavigationService navigationService;
+        #endregion
+
         public static Action HideLoginView
         {
             get
@@ -29,18 +38,49 @@ namespace StudyCalender
             }
         }
 
-        public  void NavigateToProfile(FacebookResponse profile)
+        public static void NavigateToProfile(FacebookResponse profile)
         {
 
             try
             {
+
                 var profileViewModel = new ProfileViewModel(profile);
                 var mainViewModel = MainPageViewModel.GetInstance();
                 mainViewModel.Profile = profileViewModel;
-                //App.Current.MainPage = new ProfilePage();
-                //App.Current.MainPage.
-                //Navigation.PushAsync((Page)Activator.CreateInstance(item.TargetType));
-                
+                App.Current.MainPage = new MainPage();
+                //navigationService.SetMainPage("MasterPage");//App.Current.MainPage = new ProfilePage();
+                /*var parameters = dataService.First<Parameter>(false);
+                //var token = await apiService.LoginFacebook(parameters.URLBase, "/api", "/Users",profile);
+                object token = null;
+                if (token == null)
+                {
+                    App.Current.MainPage = new LoginPage();
+                    return;
+                }
+
+                var response = await apiService.GetUserByEmail(parameters.URLBase, "/api", "/Users/GetUserByEmail", token.TokenType, token.AccessToken, token.UserName);
+
+                if (!response.IsSuccess)
+                {
+                    //IsRunning = false;
+                    //IsEnabled = true;
+                    await dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter.");
+                    return;
+                }
+
+                var user = (User)response.Result;
+                //user.AccessToken = token.AccessToken;
+                //user.TokenType = token.TokenType;
+                //user.TokenExpires = token.Expires;
+                //user.IsRemembered = IsRemembered;
+                //user.Password = Password;
+                dataService.DeleteAllAndInsert(user);
+
+                //var mainViewModel = MainPageViewModel.GetInstance();
+                mainViewModel.SetCurrentUser(new User());//user);
+
+                navigationService.SetMainPage("MasterPage");
+                /*/
 
             }
             catch (Exception ex)
@@ -58,12 +98,58 @@ namespace StudyCalender
             DependencyService.Register<ViewProvider>();
 
             RegisterViews();
-             viewProvider = DependencyService.Get<ViewProvider>();
+            viewProvider = DependencyService.Get<ViewProvider>();
+
+            apiService = new ApiService();
+            dialogService = new DialogService();
+            dataService = new DataService();
+            navigationService = new NavigationService();
+
+            LoadParameters();
+
+            var user = dataService.First<User>(false);
+
+            if (user != null && user.IsRemembered && user.TokenExpires > DateTime.Now)
+            {
+                var mainViewModel = MainPageViewModel.GetInstance();
+                mainViewModel.SetCurrentUser(user);
+                MainPage = new MasterPage();
+            }
+            else
+            {
+                App.Current.MainPage = new LoginPage();
+                //MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<LoginViewModel>()) as Page;
+            }
+
+
             //MainPage = new MainPage();
-            MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<MainPageViewModel>()) as Page;
+            //MainPage = viewProvider.GetView(ViewModelProvider.GetViewModel<MainPageViewModel>()) as Page;
             //SetMainPage();
 
+
+
         }
+
+        private void LoadParameters()
+        {
+            var urlBase = Application.Current.Resources["URLBase"].ToString();
+            var parameter = dataService.First<Parameter>(false);
+            if (parameter == null)
+            {
+                parameter = new Parameter
+                {
+                    URLBase = urlBase,
+                };
+
+                dataService.Insert(parameter);
+            }
+            else
+            {
+                parameter.URLBase = urlBase;
+                dataService.Update(parameter);
+            }
+        }
+
         public static TodoItemDatabase Database
         {
             get
@@ -111,6 +197,7 @@ namespace StudyCalender
             viewProvider.Register<EventEditorViewModel, EventEditorPage>();
             viewProvider.Register<ReminderEditorViewModel, ReminderEditorPage>();
             viewProvider.Register<ProfileViewModel, ProfilePage>();
+            //viewProvider.Register<LoginViewModel, LoginPage>();
         }
         #region Lifecycle stuff
 
